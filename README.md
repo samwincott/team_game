@@ -5,8 +5,8 @@ A team game for the CM1101 module at Cardiff University
 
 ### items.py
 - item_variable
---id
---name
---description
---mass
+  -id
+  -name
+  -description
+  -mass
 

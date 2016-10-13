@@ -1,28 +1,21 @@
 from items import *
 
-room_reception = {
-    "name": "Reception",
+flat = {
+    "name": "flat",
 
     "description":
-    """You are in a maze of twisty little passages, all alike.
-Next to you is the School of Computer Science and
-Informatics reception. The receptionist, Matt Strangis,
-seems to be playing an old school text-based adventure
-game on his computer. There are corridors leading to the
-south and east. The exit is to the west.""",
+    """This is your flat""",
 
     "exits": {"south": "Admins", "east": "Tutor", "west": "Parking"},
 
     "items": [item_biscuits, item_handbook]
 }
 
-room_admins = {
-    "name": "MJ and Simon's room",
+taf = {
+    "name": "taf",
 
     "description":
-    """You are leaning agains the door of the systems managers'
-room. Inside you notice Matt "MJ" John and Simon Jones. They
-ignore you. To the north is the reception.""",
+    """This is the taf""",
 
     "exits":  {"north": "Reception"},
 

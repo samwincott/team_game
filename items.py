@@ -37,7 +37,7 @@ item_key = {
     "name": "key",
 
     "description":
-    "Your flat key.",
+    "Your flat key",
 
     "mass": 30
 }

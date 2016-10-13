@@ -14,10 +14,16 @@ More attributes need to, and will be, added to this.
     
     
 ### memory.py
-This is the dictionary for all time slots from the night before
+This is the dictionary for all time slots from the night before.
 - item_variable
     - id - id of the time slot
     - name - name of the time slot
     - description - a description of what happened in this time
     - location - where you were in this time slot
 More attributes need to, and will be, added to this.    
+
+### game.py
+This file is currently a direct copy of the template 2 game file, this needs work.
+
+### map.py
+This file is a map of the locations in your world.

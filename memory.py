@@ -1,63 +1,67 @@
-item_id = {
-    "id": "id",
+memory_10_11 = {
+    "id": "10pm-11pm",
 
-    "name": "id card",
-
-    "description":
-    """You new shiny student ID card. Expires 1 June 2017.
-You wonder why they have printed a suicide hotline number on it?...""",
-
-    "mass": 20
-}
-
-item_laptop = {
-    "id": "laptop",
-
-    "name": "laptop",
+    "name": "The events that happened between 10 and 11pm last night.",
 
     "description":
-    "It has seen better days. At least it has a WiFi card!",
+    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "mass": 2500
+    "location": "Flat"
 }
 
-item_money = {
-    "id": "money",
+memory_11_12 = {
+    "id": "11pm-12pm",
 
-    "name": "money",
+    "name": "The events that happened between 11 and 12pm last night.",
 
     "description":
-    "This wad of cash is barely enough to pay your tuition fees.",
+    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "mass": 200
+    "location": "Flat"
 }
 
-item_biscuits = {
-    "id": "biscuits",
+memory_12_1 = {
+    "id": "12pm-1am",
 
-    "name": "a pack of biscuits",
+    "name": "The events that happened between 12 and 1am last night.",
 
-    "description": "A pack of biscuits.",
+    "description":
+    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "mass": 300
+    "location": "Flat"
 }
 
-item_pen = {
-    "id": "pen",
-    
-    "name": "a pen",
+memory_1_2 = {
+    "id": "1am-2am",
 
-    "description": "A basic ballpoint pen.",
+    "name": "The events that happened between 1 and 2am last night.",
 
-    "mass": 30
+    "description":
+    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+
+    "location": "Flat"
 }
 
-item_handbook = {
-    "id": "handbook",
-    
-    "name": "a student handbook",
+memory_2_3 = {
+    "id": "2am-3am",
 
-    "description": "This student handbook explains everything. Seriously.",
+    "name": "The events that happened between 2 and 3am last night.",
 
-    "mass": 200
+    "description":
+    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+
+    "location": "Flat"
 }
+
+memory_3_4 = {
+    "id": "3am-4am",
+
+    "name": "The events that happened between 3 and 4am last night.",
+
+    "description":
+    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+
+    "location": "Flat"
+}
+
+

@@ -4,6 +4,7 @@ from map import rooms
 from player import *
 from items import *
 from gameparser import *
+from memory import *
 
 
 
@@ -74,6 +75,12 @@ def print_inventory_items(items):
         print ("You have " + list_of_items(items) + ".\n")
     else:
         print ("You have no items")
+
+def print_memory(current_memory):
+    """This will print what you currently know about the night before."""
+
+def what_happened_between(time_slot):
+    """This will print what happened at a specific time slot, given the time"""        
 
 
 def print_room(room):

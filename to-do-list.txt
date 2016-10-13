@@ -2,8 +2,8 @@ To-do list:
 ## Remove things when you're done, and tell people when you're doing them.
 ## Add and remove things from this constantly
 - Formalise
-- 
--
+- print_memory function in game.py
+- what_happened_between function in game.py
 -
 -
 -

@@ -6,7 +6,7 @@ memory_10_11 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat"
+    "location": "Flat",
 
     "with": ["friend 1", "friend 2"]
 }
@@ -19,7 +19,7 @@ memory_11_12 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat"
+    "location": "Flat",
 
     "with": ["friend 1", "friend 2"]
 }
@@ -32,7 +32,7 @@ memory_12_1 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat"
+    "location": "Flat",
 
     "with": ["friend 1", "friend 2"]
 }
@@ -45,7 +45,7 @@ memory_1_2 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat"
+    "location": "Flat",
 
     "with": ["friend 1", "friend 2"]
 }
@@ -58,7 +58,7 @@ memory_2_3 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat"
+    "location": "Flat",
 
     "with": ["friend 1", "friend 2"]
 }
@@ -71,7 +71,7 @@ memory_3_4 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Kebab shop"
+    "location": "Kebab shop",
 
     "with": ["friend 1", "friend 2"]
 }

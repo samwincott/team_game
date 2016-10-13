@@ -13,7 +13,7 @@ You wonder why they have printed a suicide hotline number on it?...""",
 item_money = {
     "id": "money",
 
-    "name": "money",
+    "name": "money...",
 
     "description":
     "This wad of cash is barely enough to pay your tuition fees.",

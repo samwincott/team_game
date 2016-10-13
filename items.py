@@ -10,17 +10,6 @@ You wonder why they have printed a suicide hotline number on it?...""",
     "mass": 20
 }
 
-item_laptop = {
-    "id": "laptop",
-
-    "name": "laptop",
-
-    "description":
-    "It has seen better days. At least it has a WiFi card!",
-
-    "mass": 2500
-}
-
 item_money = {
     "id": "money",
 
@@ -32,32 +21,23 @@ item_money = {
     "mass": 200
 }
 
-item_biscuits = {
-    "id": "biscuits",
+item_bacon = {
+    "id": "bacon",
 
-    "name": "a pack of biscuits",
+    "name": "a pack of bacon",
 
-    "description": "A pack of biscuits.",
+    "description": "A pack of bacon.",
 
     "mass": 300
 }
 
-item_pen = {
-    "id": "pen",
-    
-    "name": "a pen",
+item_key = {
+    "id": "key",
 
-    "description": "A basic ballpoint pen.",
+    "name": "key",
+
+    "description":
+    "Your flat key.",
 
     "mass": 30
-}
-
-item_handbook = {
-    "id": "handbook",
-    
-    "name": "a student handbook",
-
-    "description": "This student handbook explains everything. Seriously.",
-
-    "mass": 200
 }

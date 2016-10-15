@@ -1,22 +1,22 @@
-item_id = {
-    "id": "id",
+item_kebab_box = {
+    "id": "kebab_box",
 
-    "name": "id card",
+    "name": "kebab_box",
 
     "description":
-    """You new shiny student ID card. Expires 1 June 2017.
-You wonder why they have printed a suicide hotline number on it?...""",
+    """This greasy styro-foam box, once contained the power of something great... but now contains the
+    one thing to give your adventure a happy ending""",
 
     "mass": 20
 }
 
-item_money = {
-    "id": "money",
+item_flyer = {
+    "id": "flyer",
 
-    "name": "money...",
+    "name": "flyer",
 
     "description":
-    "This wad of cash is barely enough to pay your tuition fees.",
+    "some call this junk... others treasure... all you know is that it will guide you through your adventure",
 
     "mass": 200
 }
@@ -37,7 +37,28 @@ item_key = {
     "name": "key",
 
     "description":
-    "Your flat key",
+    "Your flat bedroom key",
 
     "mass": 30
+}
+item_jacket = {
+    "id": "jacket",
+
+    "name": "jacket",
+
+    "description":
+    """Your SuperDry jacket makes you look boss enough for any bouncer to forget that its not actually
+    part of a dress code""",
+
+    
+}
+item_cooked_bacon = {
+    "id": "cooked_bacon",
+
+    "name": "cooked bacon",
+
+    "description":
+    """You know bacon is good right? But you can't eat it raaw... you sick person... thats why you got to cook it""",
+
+    "mass": 20
 }

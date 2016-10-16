@@ -17,8 +17,7 @@ room_Mortys = {
 
     "description":
     """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear Morty, shouting “WAIT! A MIN!?” and a series of thuds following from behind the door. After a couple of seconds of silence, you raise your hand to knock once again and as your hand is abouts to meet the wood of the door. It swings open.
-    Morty, who stands before you in all his elegance… with his shirt half over his head and his jeans on one leg.
-    He subtly says to you, “ Heeeeey!! Whats up man!? From what I recall you guys were pretty crazy last night. Oh you look like you’ve lost your jacket mate? Well from the portion I remember you had it in The Taf, might want to go check there”""",
+    Morty, who stands before you in all his elegance… with his shirt half over his head and his jeans on one leg.""",
 
     "description_alt":
     """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear nothing except for the voice in your head saying one thing… “Where is he?” … upon waiting for a sign nothing is happening and your starting to look strange standing outside your friend’s house for a while now whilst still half hung over. """,
@@ -33,7 +32,7 @@ room_taf = {
 
     "description":
     """You enter the Taf, with pride in feeling like you totally owned this place last night. Although a breeze of shame seems to have crawled up your spine. Walking now towards the bar you notice a member of staff just stood there, you walk up and ask them “Have you seen my jacket around here?”.
-    To which they promptly say,” OH! ITS YOU!? THE LEGEND WHO SMASHED LIKE 15 Jaegar Bombs in 5 mins! You were pretty impressive, can’t believe you were still partying after all that! Oh and your jacket is under the pool table”. """,
+    """,
 
     "description_alt":
     """You look around in sheer confusion as to why no one is here, you approach the bar and you see no one is around. Your conscious tells you “Now is your chance to drink as much as you want!” but then stomach feels irritable on account of last night’s session. So you walk away from the bar and inspect the rest of the place. However you have no luck in seeing anything important. """,
@@ -49,9 +48,7 @@ room_PRYZM = {
     "description":
     """Upon walking up to the club in your jacket looking the most boss you can be, turning to what feels like an adoring crowd as you walk down the road. When…really theres not much of a crowd… it’s just the self-satisfaction of how well you’re doing going to your head… and you probably look like a pretentious dick to some of them. Just saying how it is… Anyway.
     You approach the bouncer; you raise your hand for a fist bump. He fist bumps as you raise it to him. You then say to him, “aaah bouncer you druggo, how you doing?”. To which he replies,” nah yeah, yeah nah. Doing great mate. Just been working all night, you know?”. You then utter to him, “yeah man, I hear ya’. Worlds tough you know?”. He then smacks you in the back with approval, “Mate you know exactly! look you seem busy… so you can get in for free this time yeah?”. In appreciation, you humbly say “Mate you are a legend, I owe you one!”. He turns to t1he cashier, “Sally let this bloke in, his alright”.  She nods with a sigh. 
-    You carry on in, as you get to the main room. There is a woman sweeping up glass from the floor, she turns to you, “oh hey! You’re the hot guy from last night” You can see where this is going right? Like do I need to really type out all of her lines? and yours? Good because I’m not…
-    After 10 mins of talking, she says. “I have no idea what happened to you last night, all I know is that you went out the back afterwards; with some others to go get a kebab I think”.  
-    """,
+    You carry on in, as you get to the main room. There is a woman sweeping up glass from the floor.""",
 
     "description_alt":
     """Upon walking up to the club, looking the bouncer straight in the face, with the best line you could think of for you getting into the club for free. The bouncer says to you, “mate, I don’t know what your problem is, but due to the code. Can’t let you any further into the club”. Now stood at the entrance of the club, you can only but feel two things…. Regret and cold. """,
@@ -67,8 +64,7 @@ room_kebab = {
     "description":
     """You walk into the kebab shop… prepared and ready for anything… hell your feeling pretty invincible by this point. Like you could probably wrestle a honey badger with no issue… but mate in fairness that’s pretty messed up… wanting to fight animals like that… you should feel ashamed. Anyway you see the crowd of hungry people waiting for their precious fast food. But by this point you don’t care and have the ingenious idea of distracting them so you get a chance to talk to the guy behind the counter.
     You take in a deep breath… your palms are quite sweaty… knees weak… arms are heavy… still a little bit of vomit on your shirt…. Maybe from mum’s spaghetti?? And finally shout with a might roar. “LOOK IT’S THE NEW MEMBER OF THE BAND GORILLAZ!!! ITS HARAMBE!!! HE IS WALKING DOWN THE STREET OMFG!?”. With a sheer look of confusion from what may as well be called a flock of sheep. Stampede out of the shop to go take a look and try to follow who they assume is the guy. 
-    You suavely walk over to the counter, lean over the counter. The shop keeper is looking at you pretty annoyed… well you did just get rid of all his customers… what did you expect to happen? To keep this PG, he started swearing at you with the odd sentence of blaming his wife for choosing such a crazy place to set up shop. But you did manage to concentrate hard enough that he mentioned you and a woman being here last night. By which case you know that it could only be one person… Summer… and you go to step outside, whilst of course he is still rambling behind you. 
-    """,
+    You suavely walk over to the counter, lean over the counter. The shop keeper is looking at you pretty annoyed… well you did just get rid of all his customers… what did you expect to happen? To keep this PG, he started swearing at you with the odd sentence of blaming his wife for choosing such a crazy place to set up shop.""",
 
     "description alt":
     """You walk into the kebab shop and smell the intoxicating aroma of meats and chips, you try to follow the scent and try to talk to the guy behind the counter, however your attempts are useless as the place is packed with people also craving the delicacy known only as… Kebabs.  You stand alone in the crowd… now hungry and only left with the real option of leaving. Well unless you like feeling like a sardine in a can… in which case why not go to London Underground tubes, huh? """,
@@ -84,8 +80,7 @@ room_summers = {
     "description":
     """You walk up to Summer’s place… feeling pretty good still, the sun is shining, the bees are buzzing. There is a helicopter flying over your head… maybe a military one? Who knows. All you know is that today’s going pretty swell for an adventure. You get to her door and see a note; it reads “Hung Over… don’t piss me off”. Having a quick think about how she has acted in the past in this situation, you wittedly go rummaging through your pockets and pull out a can of RedBull and pull a flower from her garden. 
     You then stand braced in front of her door, with both items acting like a sword and shield; ready to take on the dragon that’s in hey lair. You then take a brave step forward and with a valiant lunge you press the doorbell ringing it multiple times. Congratulations… you have now gained a new item… it’s called man hood. After hearing what could potentially be the start of the apocalypse to you, the noise stops and the door slightly creeks open. You see an eye appear which is surrounded by hair, it peers down to the items in your hands. The door swiftly opens and Summer takes the Redbull from your hand. 
-    She then downs the RedBull like she needs it to live. And then throws the empty can into the next room. Hastily then turns back to face you. “So what’s up then?” she says casually. To which you reply, “can you remember what happened last night and if I did anything stupid specifically that stood out?”. She sarcastically replies, “But your stupid all the time” with a cheeky look on her face. You glare at her annoyed. She then sighs and rolls her eyes at you, “For some strange reason you threw most people’s keys into a kebab box and starting hiding it around the house, saying the kebab knight will protect our keys! Which… by the way was not fun when you put it in the bin… which is where I last left it”. 
-    After a few minutes passing of casual pleasantries… trying to keep things pg here people… don’t judge me… she closes the door and you must take the final path on your epic adventure! ON WARDS BRAVE ADVENTURER!… just mind arrows and getting hit in the knee… its not fun trust… 
+    She then downs the RedBull like she needs it to live. And then throws the empty can into the next room. Hastily then turns back to face you. “So what’s up then?” she says casually. To which you reply, “can you remember what happened last night and if I did anything stupid specifically that stood out?”. She sarcastically replies, “But your stupid all the time” with a cheeky look on her face. You glare at her annoyed. After a few minutes passing of casual pleasantries… trying to keep things pg here people… don’t judge me… she closes the door and you must take the final path on your epic adventure! ON WARDS BRAVE ADVENTURER!… just mind arrows and getting hit in the knee… its not fun trust… 
     """,
 
     "description alt":

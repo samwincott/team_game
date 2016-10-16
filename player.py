@@ -5,4 +5,4 @@ inventory = []
 memory = []
 
 # Start game at the reception
-current_room = rooms["Flat"]
+current_room = rooms["your_flat"]

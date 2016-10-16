@@ -116,7 +116,7 @@ rooms = {
     "your_flat": room_flat,
     "mortys_place": room_Mortys,
     "the_taf": room_taf,
-    "pyrzm": room_PRYZM,
+    "pryzm": room_PRYZM,
     "kebab_shop": room_kebab,
     "summers_place": room_summers,
     "your_room": room_end,

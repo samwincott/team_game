@@ -1,19 +1,19 @@
 from items import *
 
 room_flat = {
-    "name": "Your flat",
+    "name": "flat",
 
     "description":
     """You awaken in a horrid state, to find that the room around you is littered with rubbish and debris. It feels like a distant dream to you now. You stumble to your feet clutching your head with your hand. Struggling to re-call of what had happened the night before. But nothing comes to fruition. You hear a bestial growl. Upon looking toward, the direction of the noise. Your eyes stop at the table. You notice that your friend Rick is laying there hungover, with a bottle of Budweiser in his hand and drool hanging from his mouth.
     Your stomach rumbles in accordance to the consumption of alcohol. You stare blankly around the room and at the kitchen area.For answers as to what has happened and what to do.""",
     
-    "exits": {"south": "mortys_place"},
+    "exits": {"south": "Mortys"},
 
     "items": [item_bacon,]
 }
 
 room_Mortys = {
-    "name": "Morty's place",
+    "name": "Mortys",
 
     "description":
     """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear Morty, shouting “WAIT! A MIN!?” and a series of thuds following from behind the door. After a couple of seconds of silence, you raise your hand to knock once again and as your hand is abouts to meet the wood of the door. It swings open.
@@ -23,13 +23,13 @@ room_Mortys = {
     "description_alt":
     """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear nothing except for the voice in your head saying one thing… “Where is he?” … upon waiting for a sign nothing is happening and your starting to look strange standing outside your friend’s house for a while now whilst still half hung over. """,
     
-    "exits":  {"north": "your_flat", "west":"the_taf"},
+    "exits":  {"north": "flat", "west":"The_Taf"},
 
     "items": []
 }
 
 room_taf = {
-    "name": "The Taf",
+    "name": "the_taf",
 
     "description":
     """You enter the Taf, with pride in feeling like you totally owned this place last night. Although a breeze of shame seems to have crawled up your spine. Walking now towards the bar you notice a member of staff just stood there, you walk up and ask them “Have you seen my jacket around here?”.
@@ -38,7 +38,7 @@ room_taf = {
     "description_alt":
     """You look around in sheer confusion as to why no one is here, you approach the bar and you see no one is around. Your conscious tells you “Now is your chance to drink as much as you want!” but then stomach feels irritable on account of last night’s session. So you walk away from the bar and inspect the rest of the place. However you have no luck in seeing anything important. """,
 
-    "exits":  {"east": "mortys_place", "south":"pryzm"},
+    "exits":  {"east": "Mortys", "south":"PRYZM"},
 
     "items": [item_jacket]
 }
@@ -56,13 +56,13 @@ room_PRYZM = {
     "description_alt":
     """Upon walking up to the club, looking the bouncer straight in the face, with the best line you could think of for you getting into the club for free. The bouncer says to you, “mate, I don’t know what your problem is, but due to the code. Can’t let you any further into the club”. Now stood at the entrance of the club, you can only but feel two things…. Regret and cold. """,
 
-    "exits": {"west": "kebab_shop", "north": "the_taf"},
+    "exits": {"north": "The_Taf", "west": "Kebab_Shop"},
 
     "items": []
 }
 
 room_kebab = {
-    "name": "Kebab shop",
+    "name": "Kebab_Shop",
 
     "description":
     """You walk into the kebab shop… prepared and ready for anything… hell your feeling pretty invincible by this point. Like you could probably wrestle a honey badger with no issue… but mate in fairness that’s pretty messed up… wanting to fight animals like that… you should feel ashamed. Anyway you see the crowd of hungry people waiting for their precious fast food. But by this point you don’t care and have the ingenious idea of distracting them so you get a chance to talk to the guy behind the counter.
@@ -73,13 +73,13 @@ room_kebab = {
     "description alt":
     """You walk into the kebab shop and smell the intoxicating aroma of meats and chips, you try to follow the scent and try to talk to the guy behind the counter, however your attempts are useless as the place is packed with people also craving the delicacy known only as… Kebabs.  You stand alone in the crowd… now hungry and only left with the real option of leaving. Well unless you like feeling like a sardine in a can… in which case why not go to London Underground tubes, huh? """,
 
-    "exits": {"east": "pryzm", "south": "summers_place"},
+    "exits": {"east": "PRYZM", "south": "Summers"},
 
     "items": []
 }
 
 room_summers = {
-    "name": "Summer's place",
+    "name": "Summers",
 
     "description":
     """You walk up to Summer’s place… feeling pretty good still, the sun is shining, the bees are buzzing. There is a helicopter flying over your head… maybe a military one? Who knows. All you know is that today’s going pretty swell for an adventure. You get to her door and see a note; it reads “Hung Over… don’t piss me off”. Having a quick think about how she has acted in the past in this situation, you wittedly go rummaging through your pockets and pull out a can of RedBull and pull a flower from her garden. 
@@ -93,32 +93,32 @@ room_summers = {
     So now you stand outside another person’s house…. Looking strange as you contemplate over whether it’s a good idea to disturb her. You are really out to make friends today aren’t you? 
     """,
 
-    "exits": {"north": "kebab_shop","west":"your_flat"},
+    "exits": {"north": "Kebab_Shop","west":"End"},
 
     "items": []
 }
 
 room_end = {
-    "name": "Your room",
+    "name": "End",
 
     "description":
     """You run through your door with a massive smile on your face and feeling rather accomplished. Bravo you clever little sausage. Rick turns his head from the TV in confusement; then shrugs his shoulders and says, “mate just remembered that your keys are in the kebab box in the bin”. And he then turns back to the TV.  You then drop your noble pose and face-palm, then slowly walk over to the now less than sanitary kitchen. You then walk over to the bin and Jab your finger at its lid. As you do so, you can smell the horrid remains linger from its container. It sends your nostrils into disarray; which causes you to leap backwards. You grab a peg from among the random objects in the kitchen and put it on your nose. You then, quickly turn your side to the bin and shove your hand straight into it without looking to see if you can feel the kebab box.
     After a couple of seconds of searching, you feel what appears to be the box at the bottom you pull it out with full force and even let out a little grunt. Kind of imagine a warrior that’s just ripped out the heart of his foe with his hand… only it’s you… and well… its rubbish in your hand. Rick turns and looks at your accomplishment and slowly claps and subtly says, “Mate, you need to calm down… like have a pint or something” then he just goes back to watching TV. You open the box and grab the key which is covered in kebab sauce and other contents of the bin. You hurry to the sink like your life depends on it and wash off the waste. You then walk over to your bedroom door and unlock it. As your key turns in the lock, Rick is screaming “GOOOOAAAL!” As Manchester United scored against Liverpool. To which you afterwards then step through the door and close it behind you and notice a video camera sat on the bed still recording. You take the camera into the next room where Rick is sat. 
     And you tell him, “mate want to see what actually happened last night?”. He grabs the remote for the TV and turns it off and shouts, “Lets do this!”.""",
 
-    "exits": {"north": "your_room","east":"summers_place"},
+    "exits": {"east":"Summers", "north": "End"},
 
     "items": [item_kebab_box]
 }
 
 
 rooms = {
-    "your_flat": room_flat,
-    "mortys_place": room_Mortys,
-    "the_taf": room_taf,
-    "pryzm": room_PRYZM,
-    "kebab_shop": room_kebab,
-    "summers_place": room_summers,
-    "your_room": room_end,
+    "flat": room_flat,
+    "Mortys": room_Mortys,
+    "The_Taf": room_taf,
+    "PRYZM": room_PRYZM,
+    "Kebab_Shop": room_kebab,
+    'Summers': room_summers,
+    "End": room_end,
     
 }

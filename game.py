@@ -250,16 +250,7 @@ def is_valid_exit(exits, chosen_exit):
     >>> is_valid_exit(rooms["Parking"]["exits"], "east")
     True
     """
-    return chosen_exit in exits
-
-def get_current_mass():
-    current_mass = 0
-
-    for item in inventory:
-        current_mass += item["mass"] 
-
-    return current_mass       
-
+    return chosen_exit in exits  
 
 def execute_go(direction):
     """This function, given the direction (e.g. "south") updates the current room
@@ -286,17 +277,12 @@ def execute_take(item_id):
     there is no such item in the room, this function prints
     "You cannot take that."
     """
-
+    
     for item in current_room["items"]:
-        weight = get_current_mass() + item["mass"]
-        if weight > 3000:
-            print("Too heavy!")
+        if item["id"] == item_id:
+            current_room["items"].remove(item)
+            inventory.append(item)
             return
-        else:
-            if item["id"] == item_id:
-                current_room["items"].remove(item)
-                inventory.append(item)
-                return
 
 
     print("You cannot take that.")        

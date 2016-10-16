@@ -80,18 +80,15 @@ def adding_a_memory(timeslot):
     """This will be called when the player can remember something from the night before
     This should be called like adding_a_memory('12pm-1am')"""
 
-        memory.append(timeslot)
-        return
-
-
-    print("You cannot take that.")      
+    memory.append(timeslot)
+    return
 
 def print_memory(current_memory):
     """This will print what you currently know about the night before.
     This should be called with the memory inventory in player.py like print_memory(memory)."""
 
     for x in current_memory:
-        print("You know what happened between " + x["id"] ".")
+        print("You know what happened between " + x["id"] + ".")
 
 def what_happened_between(timeslot):
     """This will print what happened at a specific time slot, given the time"""        

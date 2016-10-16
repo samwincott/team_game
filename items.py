@@ -53,7 +53,7 @@ item_jacket = {
     
 }
 item_cooked_bacon = {
-    "id": "cooked_bacon",
+    "id": "cooked-bacon",
 
     "name": "cooked bacon",
 

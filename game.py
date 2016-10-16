@@ -215,6 +215,7 @@ def print_menu(exits, room_items, inv_items):
     What do you want to do?
 
     """
+    
     print("You can:")
     # Iterate over available exits
     for direction in exits:
@@ -224,13 +225,18 @@ def print_menu(exits, room_items, inv_items):
     #
     # COMPLETE ME!
     #
-
+    
+    global rick_awake
     for name in room_items:
         print("TAKE " + name["id"] + " to take " + name["name"])
 
     for name in inv_items:
-        print("DROP " + name["id"] + " to drop your " + name["name"])    
-    
+        print("DROP " + name["id"] + " to drop your " + name["name"])
+        if name["id"] == "bacon":
+            print_cook_bacon()
+            
+    if rick_awake == True:
+        print("TALK to talk to Rick") #later add a character dict for all characters
     print("What do you want to do?")
 
 
@@ -277,7 +283,13 @@ def execute_go(direction):
     else:
         print("You cannot go there.")    
 
-
+def print_cook_bacon():
+    """this function will print an additional action the user can take depending on
+    if they have bacon in their inventory"""
+ 
+    print("COOK to cook the bacon")
+    
+    
 
 
 def execute_take(item_id):
@@ -307,16 +319,32 @@ def execute_drop(item_id):
     player's inventory to list of items in the current room. However, if there is
     no such item in the inventory, this function prints "You cannot drop that."
     """
-    
+    print(item_id)
     for item in inventory:
         if item["id"] == item_id:
             current_room["items"].append(item)
+            
             inventory.remove(item)
             return
     
     
 
-    print("You cannot drop that.")    
+    print("You cannot drop that.")
+
+def execute_cook(item_id):
+    global rick_awake
+    for item in inventory:
+      if item["id"] == item_id:
+          print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")  
+          inventory.remove(item)
+          rick_awake = True
+          return
+      else:
+          print("you cannot cook that")
+          return
+
+def execute_talk():
+    print("Rick mutters nonsense but you here (add someting story related here)")
     
 
 def execute_command(command):
@@ -347,7 +375,16 @@ def execute_command(command):
             execute_drop(command[1])
         else:
             print("Drop what?")
-
+    elif command[0] == "cook":
+        if len(command) > 1:
+            execute_cook(command[1])
+        else:
+            print("you cannot cook that")
+    elif command[0] == "talk":
+        if len(command) > 1:
+            execute_talk(command[1])
+        else:
+            print("that won't help")
     else:
         print("This makes no sense.")
 
@@ -392,6 +429,8 @@ def move(exits, direction):
 
 # This is the entry point of our program
 def main():
+    global rick_awake
+    rick_awake = False
 
     # Main game loop
     while True:

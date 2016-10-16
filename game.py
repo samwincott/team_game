@@ -50,7 +50,7 @@ def print_room_items(room):
 
     >>> print_room_items(rooms["Admins"])
 
-    (no output)
+   (no output)
 
     Note: <BLANKLINE> here means that doctest should expect a blank line.
 

@@ -95,7 +95,12 @@ def print_memory(current_memory):
         print("You can't remember anything from last night.")        
 
 def what_happened_between(timeslot):
-    """This will print what happened at a specific time slot, given the time"""        
+    """This will print what happened at a specific time slot, given the time""" 
+
+    if timeslot in memory:
+        print(timeslot["description"])  
+    else:
+        print("You can't remember what happened then.")         
     
 
 def print_room(room):
@@ -234,7 +239,7 @@ def print_menu(exits, room_items, inv_items):
     for name in inv_items:
         print("DROP " + name["id"] + " to drop your " + name["name"])
         if name["id"] == "bacon":
-            print_cook_bacon()
+            print_cook_bacon()     
             
     if rick_awake == True:
         print("TALK to talk to Rick") #later add a character dict for all characters

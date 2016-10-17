@@ -4,7 +4,7 @@ from map import *
 
 friend_rick_asleep = {
 
-    "name": "Rick",
+    "name": "rick",
 
     "items": [],
 
@@ -18,7 +18,7 @@ friend_rick_asleep = {
 
 friend_rick_awake = {
 
-    "name": "Rick",
+    "name": "rick",
 
     "items": [],
 
@@ -30,7 +30,7 @@ friend_rick_awake = {
 }
 
 friend_morty = {
-    "name": "Summer",
+    "name": "summer",
 
     "items": [],
 
@@ -53,7 +53,7 @@ friend_summer = {
 
 friend_bar_staff = {
 
-    "name": "Bar",
+    "name": "bar",
 
     "phrase":
     """OH! ITS YOU!? THE LEGEND WHO SMASHED LIKE 15 Jaegar Bombs in 5 mins! You were pretty impressive, can’t believe you were still partying after all that! Oh and your jacket is under the pool table """,
@@ -64,7 +64,7 @@ friend_bar_staff = {
 
 friend_club_rep = {
 
-    "name": "Club",
+    "name": "club",
 
     "items": [],
 
@@ -78,7 +78,7 @@ friend_club_rep = {
 
 friend_kebab_worker = {
 
-    "name": "Kebabby",
+    "name": "kebabby",
 
     "items": [],
 

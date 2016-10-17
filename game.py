@@ -191,7 +191,7 @@ def print_exit(direction, leads_to):
     print("GO " + direction.upper() + " to " + leads_to + ".")
 
 
-def print_menu(exits, room_items, inv_items):
+def print_menu(exits, room_items, inv_items, room_people):
     """This function displays the menu of available actions to the player. The
     argument exits is a dictionary of exits as exemplified in map.py. The
     arguments room_items and inv_items are the items lying around in the room
@@ -233,6 +233,10 @@ def print_menu(exits, room_items, inv_items):
     #
     
     global rick_awake
+    
+    for name in room_people:
+        print("TALK TO " + name["name"] + " to talk to " + name["name"])
+
     for name in room_items:
         print("TAKE " + name["id"] + " to take " + name["name"])
 
@@ -241,10 +245,9 @@ def print_menu(exits, room_items, inv_items):
         if name["id"] == "bacon":
             print_cook_bacon()     
             
-    if rick_awake == True:
-        print("TALK to talk to Rick") #later add a character dict for all characters
+    # if rick_awake == True:
+    #     print("TALK to talk to Rick") #later add a character dict for all characters
     print("What do you want to do?")
-
 
 def is_valid_exit(exits, chosen_exit):
     """This function checks, given a dictionary "exits" (see map.py) and
@@ -264,8 +267,19 @@ def is_valid_exit(exits, chosen_exit):
     """
     return chosen_exit in exits  
 
-def talk_to(person):
+def talk_to(person, room):
     """add this"""
+
+    print(person)
+
+    people_in_room = current_room["friends"]
+
+    for friend in people_in_room:
+        if friend["name"] == person:
+            print(friend["phrase"])
+            return
+    print(person["phrase"])
+      
 
 
 def execute_go(direction):
@@ -333,15 +347,12 @@ def execute_cook(item_id):
       if item["id"] == item_id:
           print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")  
           inventory.remove(item)
-          rick_awake = True
+          current_room["friends"].append(friend_rick_awake)
+          current_room["friends"].remove(friend_rick_asleep)
           return
       else:
           print("you cannot cook that")
           return
-
-def execute_talk():
-    print("Rick mutters nonsense but you here (add someting story related here)")
-    
 
 def execute_command(command):
     """This function takes a command (a list of words as returned by
@@ -378,14 +389,14 @@ def execute_command(command):
             print("you cannot cook that")
     elif command[0] == "talk":
         if len(command) > 1:
-            execute_talk(command[1])
+            talk_to(command[1], current_room)
         else:
             print("that won't help")
     else:
         print("This makes no sense.")
 
 
-def menu(exits, room_items, inv_items):
+def menu(exits, room_items, inv_items, room_people):
     """This function, given a dictionary of possible exits from a room, and a list
     of items found in the room and carried by the player, prints the menu of
     actions using print_menu() function. It then prompts the player to type an
@@ -395,7 +406,7 @@ def menu(exits, room_items, inv_items):
     """
 
     # Display menu
-    print_menu(exits, room_items, inv_items)
+    print_menu(exits, room_items, inv_items, room_people)
 
     # Read player's input
     user_input = input("> ")
@@ -436,7 +447,7 @@ def main():
         print_memory(memory)
 
         # Show the menu with possible actions and ask the player
-        command = menu(current_room["exits"], current_room["items"], inventory)
+        command = menu(current_room["exits"], current_room["items"], inventory, current_room["friends"])
 
         # Execute the player's command
         execute_command(command)

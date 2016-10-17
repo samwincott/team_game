@@ -439,7 +439,7 @@ def main():
     rick_awake = False
 
     # Main game loop
-    print("Put initial game start description here yeah!?")
+    print("You wake up in the kitchen next to rick, one of your flat mates, after what was evidnently an eventfull alcohol fuled night. When you go to go to your room you realise that you've lost your key. Time to trace your steps, find out what happened last night and where the hell your key is!")
     while True:
         # Display game status (room description, inventory etc.)
         print_room(current_room)

@@ -76,7 +76,7 @@ memory_3_4 = {
 
     "location": room_kebab,
 
-    "with": [friend_kebab_worker, friend_summer, friend_rick_awake]
+    "with": [friend_kebab_worker_one, friend_summer_with_coffee, friend_rick_awake]
 }
 
 

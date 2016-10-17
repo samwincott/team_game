@@ -90,12 +90,12 @@ friend_club_rep = {
 
     "phrase":
     """ I have no idea what happened to you last night, I'm guessing you went for some food, by how you lads were dancing, you would have worked up an apetite"""
-    "memory": []
+    "memory" 
 
 
 }
 
-friend_kebab_worker = {
+friend_kebab_worker_one = {
 
     "name": "kebabby",
 
@@ -109,8 +109,46 @@ friend_kebab_worker = {
 
 
 }
-freind_mcdonalds_worker = {
+friend_kebab_worker_two = {
+
+    "name": "kebabby",
+
+    "items": [],
+
+    "phrase":
+    """Hey, I wasn't in last night, but kebabby was, he might know.  """,
+
+    "memory": []
+
+
+
+}
+
+friend_mcdonalds_worker = {
     "name" : "Deborah",
     "pharse": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your frinds ,you wont be served here in a long time!"
     }
 
+friend_lizzy = {
+    "name" : "Lizzy",
+    "pharse": "Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself"
+    }
+
+friend_sarah= {
+    "name" : "Sarah",
+    "pharse": "Hi"
+    }
+
+friend_joe = {
+    "name" : "Joe",
+    "pharse": "Good to see you're still alive man! ",
+    }
+friend_mike = {
+	"name": "Mike",
+	"phrase": "Oh Hey there man"
+}
+
+friend_starbucks_worker = {
+	"name": "starbucks worker",
+	"phrase": "That'll be £3.50"
+}

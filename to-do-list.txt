@@ -4,6 +4,6 @@ To-do list:
 - Formalise
 - what_happened_between function in game.py
 - Need to get it so game.py operates in a basic state - Need to make it so that game.py will choose between descriptions of room depending on whats happened 
-- need to write story of memorys of what actually happened that night
-- sort out talk_to function
--
+- Need to write story of memorys of what actually happened that night
+- Need to append the memory as we discover the events of 'last night'
+- Bug test the code

@@ -218,7 +218,9 @@ def print_menu(exits, room_items, inv_items, room_people):
     for name in inv_items:
         print("DROP " + name["id"] + " to drop your " + name["name"])
         if name["id"] == "bacon":
-            print_cook_bacon()     
+            print_cook_bacon()
+        if name["id"] == "flyer":
+            print_read_flyer()
     have_item(inventory)
     
     # if rick_awake == True:
@@ -333,8 +335,31 @@ def have_item(item_id):
             current_room["friends"].append(friend_morty_with_coat)
             current_room["friends"].remove(friend_morty_without_coat)
             inventory.remove(item)
+            inventory.append(item_flyer)
             return
+        elif item["name"] == "coffee" and current_room["id"] == "summers":
+            current_room["friends"].append(friend_summer_with_coffee)
+            current_room["friends"].remove(friend_summer_without_coffee)
+            inventory.remove(item)
+            return
+        
+def print_read_flyer():
+    print("READ FLYER to read flyer")
 
+def read_flyer(item_id, inventory):
+    for x in inventory:
+        if x["id"] == "flyer":
+             for key in inventory:
+                if item_id == "flyer":
+                    print(key["description"])
+                    return
+                else:
+                    print("you cannot read that.")
+                    return
+        else:
+            print("you cannot read that.")
+
+            
 def execute_command(command):
     """This function takes a command (a list of words as returned by
     normalise_input) and, depending on the type of action (the first word of
@@ -372,6 +397,11 @@ def execute_command(command):
             talk_to(command[1], current_room)
         else:
             print("that won't help")
+    elif command[0] == "read":
+        if len(command) > 1:
+            read_flyer(command[1], inventory)
+        else:
+            print("that won't help")        
     else:
         print("This makes no sense.")
 

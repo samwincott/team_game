@@ -1,6 +1,13 @@
 # team_game
 A team game for the CM1101 module at Cardiff University
 
+## syntax rules
+- all lower case
+- if more than one word, underscore in middle such as:
+	- ricks_place
+-	
+
+
 ## files
 
 ### items.py
@@ -27,3 +34,5 @@ This file is currently a direct copy of the template 2 game file, this needs wor
 
 ### map.py
 This file is a map of the locations in your world.
+
+

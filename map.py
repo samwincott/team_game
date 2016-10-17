@@ -1,7 +1,7 @@
 from items import *
 from friend import *
 room_flat = {
-    "name": "flat",
+    "name": "Your flat",
 
     "description":
     """You awaken in a horrid state, to find that the room around you is littered with rubbish and debris. It feels like a distant dream to you now. You stumble to your feet clutching your head with your hand. Struggling to re-call of what had happened the night before. But nothing comes to fruition. You hear a bestial growl. Upon looking toward, the direction of the noise. Your eyes stop at the table. You notice that your friend Rick is laying there hungover, with a bottle of Budweiser in his hand and drool hanging from his mouth.
@@ -14,7 +14,7 @@ room_flat = {
     "friends": [friend_rick_asleep]
 }
 
-room_Mortys = {
+room_mortys = {
     "name": "Mortys",
 
     "description":
@@ -32,7 +32,7 @@ room_Mortys = {
 }
 
 room_taf = {
-    "name": "the taf",
+    "name": "The Taf",
 
     "description":
     """You enter the Taf, with pride in feeling like you totally owned this place last night. Although a breeze of shame seems to have crawled up your spine. Walking now towards the bar you notice a member of staff just stood there, you walk up and ask them “Have you seen my jacket around here?”.
@@ -48,7 +48,7 @@ room_taf = {
     "friends": [friend_bar_staff]
 }
 
-room_PRYZM = {
+room_pryzm = {
     "name": "PRYZM",
 
     "description":
@@ -67,7 +67,7 @@ room_PRYZM = {
 }
 
 room_kebab = {
-    "name": "Kebab_Shop",
+    "name": "Kebab Shop",
 
     "description":
     """You walk into the kebab shop… prepared and ready for anything… hell your feeling pretty invincible by this point. Like you could probably wrestle a honey badger with no issue… but mate in fairness that’s pretty messed up… wanting to fight animals like that… you should feel ashamed. Anyway you see the crowd of hungry people waiting for their precious fast food. But by this point you don’t care and have the ingenious idea of distracting them so you get a chance to talk to the guy behind the counter.
@@ -85,7 +85,7 @@ room_kebab = {
 }
 
 room_summers = {
-    "name": "Summers",
+    "name": "Summer's Place",
 
     "description":
     """You walk up to Summer’s place… feeling pretty good still, the sun is shining, the bees are buzzing. There is a helicopter flying over your head… maybe a military one? Who knows. All you know is that today’s going pretty swell for an adventure. You get to her door and see a note; it reads “Hung Over… don’t piss me off”. Having a quick think about how she has acted in the past in this situation, you wittedly go rummaging through your pockets and pull out a can of RedBull and pull a flower from her garden.
@@ -120,14 +120,113 @@ room_end = {
     "friends": []
 }
 
+room_north_building = {
+    "name": "The North Building",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+    
+
+}
+
+room_matalan = {
+    "name": "Matalan",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+}
+
+room_wilko = {
+    "name": "Wilko",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+}
+
+room_walkabout = {
+    "name": "Walkabout",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+}
+
+room_personal_tutors_office = {
+    "name": "Your personal Tutor's office",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+}
+
+room_wetherspoons = {
+    "name": "Wetherspoons",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+}
+
+room_talybont = {
+    "name": "Talybont",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
+
+}
 
 rooms = {
     "flat": room_flat,
-    "Mortys": room_Mortys,
-    "The_Taf": room_taf,
-    "PRYZM": room_PRYZM,
-    "Kebab_Shop": room_kebab,
-    'Summers': room_summers,
-    "End": room_end,
+    "mortys": room_mortys,
+    "taf": room_taf,
+    "pryzm": room_pryzm,
+    "kebab": room_kebab,
+    "summers": room_summers,
+    "end": room_end,
+    "nbuilding": room_north_building,
+    "matalan": room_matalan,
+    "wilko": room_wilko,
+    "walkabout": room_walkabout,
+    "tutor": room_personal_tutors_office,
+    "wetherspoons": room_wetherspoons,
+    "talybont": room_talybont,
 
 }

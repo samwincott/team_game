@@ -264,6 +264,10 @@ def is_valid_exit(exits, chosen_exit):
     """
     return chosen_exit in exits  
 
+def talk_to(person):
+    """add this"""
+
+
 def execute_go(direction):
     """This function, given the direction (e.g. "south") updates the current room
     to reflect the movement of the player if the direction is a valid exit

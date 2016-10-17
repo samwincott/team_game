@@ -35,7 +35,7 @@ friend_morty_without_coat = {
     "items": [],
 
     "phrase":
-    """Heeeeey!! Whats up man!? From what I recall you guys were pretty crazy last night. Oh you look like you’ve lost your jacket mate? Well from the portion I remember you had it in The Taf, might want to go check there. """,
+    """Heeeeey!! What's up man! From what I recall you guys were pretty crazy last night. Oh you look like you've lost your jacket mate? Well, from the portion I remember you had it in The Taf, might want to go check there. """,
 
     "memory": []
 }

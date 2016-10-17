@@ -24,8 +24,8 @@ room_mortys = {
     "name": "Mortys",
 
     "description":
-    """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear Morty, shouting “WAIT! A MIN!?” and a series of thuds following from behind the door. After a couple of seconds of silence, you raise your hand to knock once again and as your hand is abouts to meet the wood of the door. It swings open.
-    Morty, who stands before you in all his elegance… with his shirt half over his head and his jeans on one leg.""",
+    """Upon reaching Morty's house, you knock on the door and wait a couple of minutes. You hear Morty, shouting "WAIT! A MIN?!" and a series of thuds following from behind the door. After a couple of seconds of silence, you raise your hand to knock once again and as your hand is abouts to meet the wood of the door. It swings open.
+    Morty, who stands before you in all his elegance... with his shirt half over his head and his jeans on one leg.""",
 
     "description_alt":
     """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear nothing except for the voice in your head saying one thing… “Where is he?” … upon waiting for a sign nothing is happening and your starting to look strange standing outside your friend’s house for a while now whilst still half hung over. """,

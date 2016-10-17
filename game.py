@@ -188,6 +188,7 @@ def print_exit(direction, leads_to):
     >>> print_exit("south", "MJ and Simon's room")
     GO SOUTH to MJ and Simon's room.
     """
+    
     print("GO " + direction.upper() + " to " + leads_to + ".")
 
 
@@ -300,7 +301,7 @@ def print_cook_bacon():
     """this function will print an additional action the user can take depending on
     if they have bacon in their inventory"""
  
-    print("COOK to cook the bacon")
+    print("COOK BACON to cook the bacon")
     
     
 

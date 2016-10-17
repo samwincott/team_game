@@ -81,10 +81,7 @@ def adding_a_memory(timeslot):
     This should be called like adding_a_memory('12pm-1am')"""
 
     memory.append(timeslot)
-    return
-
-
-    print("You cannot take that.")      
+    return      
 
 def print_memory(current_memory):
     """This will print what you currently know about the night before.

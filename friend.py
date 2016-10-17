@@ -2,8 +2,21 @@ from items import *
 from map import rooms
 
 
+friend_rick_asleep = {
 
-friend_rick = {
+    "name": "Rick"
+
+    "items": []
+
+    "phrase": "Rick is asleep, you cannot seem to wake him"
+
+    "memory": []
+
+}
+
+
+
+friend_rick_awake = {
 
     "name": "Rick",
 
@@ -38,7 +51,7 @@ friend_summer = {
 
 }
 
-friend_Bar_Staff = {
+friend_bar_staff = {
 
     "name": "Bar",
 
@@ -49,7 +62,7 @@ friend_Bar_Staff = {
 
 }
 
-friend_club_Rep = {
+friend_club_rep = {
 
     "name": "Club",
 
@@ -72,7 +85,7 @@ friend_kebab_worker = {
     "phrase":
     """he mentioned you and a woman being here last night.  """,
 
-    "memory": []    
+    "memory": []
 
 
 

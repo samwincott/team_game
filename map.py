@@ -1,5 +1,5 @@
 from items import *
-
+from friend import *
 room_flat = {
     "name": "flat",
 
@@ -10,6 +10,8 @@ room_flat = {
     "exits": {"south": "Mortys"},
 
     "items": [item_bacon,]
+
+    "friends": [friend_rick_asleep]
 }
 
 room_Mortys = {
@@ -25,6 +27,8 @@ room_Mortys = {
     "exits":  {"north": "flat", "west":"The_Taf"},
 
     "items": []
+
+    "friends": [friend_morty]
 }
 
 room_taf = {
@@ -40,6 +44,8 @@ room_taf = {
     "exits":  {"east": "Mortys", "south":"PRYZM"},
 
     "items": [item_jacket]
+
+    "friends": [friend_bar_staff]
 }
 
 room_PRYZM = {
@@ -56,6 +62,8 @@ room_PRYZM = {
     "exits": {"north": "The_Taf", "west": "Kebab_Shop"},
 
     "items": []
+
+    "friends": [friend_club_rep]
 }
 
 room_kebab = {
@@ -72,6 +80,8 @@ room_kebab = {
     "exits": {"east": "PRYZM", "south": "Summers"},
 
     "items": []
+
+    "friends": [friend_kebab_worker]
 }
 
 room_summers = {
@@ -91,6 +101,8 @@ room_summers = {
     "exits": {"north": "Kebab_Shop","west":"End"},
 
     "items": []
+
+    "friends": [friend_summer]
 }
 
 room_end = {
@@ -104,6 +116,8 @@ room_end = {
     "exits": {"east":"Summers", "north": "End"},
 
     "items": [item_kebab_box]
+
+    "friends": []
 }
 
 

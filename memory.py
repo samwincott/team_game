@@ -1,3 +1,6 @@
+from map import *
+from friend import *
+
 memory_10_11 = {
     "id": "10pm-11pm",
 
@@ -6,9 +9,9 @@ memory_10_11 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat",
+    "location": room_flat,
 
-    "with": ["friend 1", "friend 2"]
+    "with": [friend_rick_awake,]
 }
 
 memory_11_12 = {
@@ -19,7 +22,7 @@ memory_11_12 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat",
+    "location": room_taf,
 
     "with": ["friend 1", "friend 2"]
 }
@@ -32,7 +35,7 @@ memory_12_1 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat",
+    "location": room_walkabout,
 
     "with": ["friend 1", "friend 2"]
 }
@@ -45,7 +48,7 @@ memory_1_2 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat",
+    "location": room_pryzm,
 
     "with": ["friend 1", "friend 2"]
 }
@@ -58,7 +61,7 @@ memory_2_3 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Flat",
+    "location": room_mcdonalds,
 
     "with": ["friend 1", "friend 2"]
 }
@@ -71,9 +74,9 @@ memory_3_4 = {
     "description":
     """Description of what happened between 10 and 11pm last night -- ADD THIS""",
 
-    "location": "Kebab shop",
+    "location": room_kebab,
 
-    "with": ["friend 1", "friend 2"]
+    "with": [friend_kebab_worker, friend_summer, friend_rick_awake]
 }
 
 

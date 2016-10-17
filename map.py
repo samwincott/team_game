@@ -1,13 +1,16 @@
 from items import *
 from friend import *
 room_flat = {
+
+    "id": "flat",
+
     "name": "Your flat",
 
     "description":
     """You awaken in a horrid state, to find that the room around you is littered with rubbish and debris. It feels like a distant dream to you now. You stumble to your feet clutching your head with your hand. Struggling to re-call of what had happened the night before. But nothing comes to fruition. You hear a bestial growl. Upon looking toward, the direction of the noise. Your eyes stop at the table. You notice that your friend Rick is laying there hungover, with a bottle of Budweiser in his hand and drool hanging from his mouth.
     Your stomach rumbles in accordance to the consumption of alcohol. You stare blankly around the room and at the kitchen area.For answers as to what has happened and what to do.""",
 
-    "exits": {"south": "Mortys"},
+    "exits": {"south": "mortys"},
 
     "items": [item_bacon],
 
@@ -15,6 +18,9 @@ room_flat = {
 }
 
 room_mortys = {
+
+    "id": "mortys",
+
     "name": "Mortys",
 
     "description":
@@ -24,7 +30,7 @@ room_mortys = {
     "description_alt":
     """Upon reaching Morty’s house, you knock on the door and wait a couple of minutes. You hear nothing except for the voice in your head saying one thing… “Where is he?” … upon waiting for a sign nothing is happening and your starting to look strange standing outside your friend’s house for a while now whilst still half hung over. """,
 
-    "exits":  {"north": "flat", "west":"The_Taf"},
+    "exits":  {"north": "flat", "west":"taf"},
 
     "items": [],
 
@@ -32,6 +38,9 @@ room_mortys = {
 }
 
 room_taf = {
+
+    "id": "taf",
+
     "name": "The Taf",
 
     "description":
@@ -41,7 +50,7 @@ room_taf = {
     "description_alt":
     """You look around in sheer confusion as to why no one is here, you approach the bar and you see no one is around. Your conscious tells you “Now is your chance to drink as much as you want!” but then stomach feels irritable on account of last night’s session. So you walk away from the bar and inspect the rest of the place. However you have no luck in seeing anything important. """,
 
-    "exits":  {"east": "Mortys", "south":"PRYZM"},
+    "exits":  {"east": "mortys", "south":"pryzm"},
 
     "items": [item_jacket],
 
@@ -49,6 +58,9 @@ room_taf = {
 }
 
 room_pryzm = {
+
+    "id": "pryzm",
+
     "name": "PRYZM",
 
     "description":
@@ -59,7 +71,7 @@ room_pryzm = {
     "description_alt":
     """Upon walking up to the club, looking the bouncer straight in the face, with the best line you could think of for you getting into the club for free. The bouncer says to you, “mate, I don’t know what your problem is, but due to the code. Can’t let you any further into the club”. Now stood at the entrance of the club, you can only but feel two things…. Regret and cold. """,
 
-    "exits": {"north": "The_Taf", "west": "Kebab_Shop"},
+    "exits": {"north": "taf", "west": "kebab"},
 
     "items": [],
 
@@ -67,6 +79,9 @@ room_pryzm = {
 }
 
 room_kebab = {
+
+    "id": "kebab",
+
     "name": "Kebab Shop",
 
     "description":
@@ -77,7 +92,7 @@ room_kebab = {
     "description alt":
     """You walk into the kebab shop and smell the intoxicating aroma of meats and chips, you try to follow the scent and try to talk to the guy behind the counter, however your attempts are useless as the place is packed with people also craving the delicacy known only as… Kebabs.  You stand alone in the crowd… now hungry and only left with the real option of leaving. Well unless you like feeling like a sardine in a can… in which case why not go to London Underground tubes, huh? """,
 
-    "exits": {"east": "PRYZM", "south": "Summers"},
+    "exits": {"east": "pryzm", "south": "summers"},
 
     "items": [],
 
@@ -85,6 +100,9 @@ room_kebab = {
 }
 
 room_summers = {
+
+    "id": "summers",   
+
     "name": "Summer's Place",
 
     "description":
@@ -98,7 +116,7 @@ room_summers = {
     So now you stand outside another person’s house…. Looking strange as you contemplate over whether it’s a good idea to disturb her. You are really out to make friends today aren’t you?
     """,
 
-    "exits": {"north": "Kebab_Shop","west":"End"},
+    "exits": {"north": "kebab","west":"end"},
 
     "items": [],
 
@@ -106,6 +124,9 @@ room_summers = {
 }
 
 room_end = {
+
+    "id": "end",
+
     "name": "End",
 
     "description":
@@ -113,7 +134,7 @@ room_end = {
     After a couple of seconds of searching, you feel what appears to be the box at the bottom you pull it out with full force and even let out a little grunt. Kind of imagine a warrior that’s just ripped out the heart of his foe with his hand… only it’s you… and well… its rubbish in your hand. Rick turns and looks at your accomplishment and slowly claps and subtly says, “Mate, you need to calm down… like have a pint or something” then he just goes back to watching TV. You open the box and grab the key which is covered in kebab sauce and other contents of the bin. You hurry to the sink like your life depends on it and wash off the waste. You then walk over to your bedroom door and unlock it. As your key turns in the lock, Rick is screaming “GOOOOAAAL!” As Manchester United scored against Liverpool. To which you afterwards then step through the door and close it behind you and notice a video camera sat on the bed still recording. You take the camera into the next room where Rick is sat.
     And you tell him, “mate want to see what actually happened last night?”. He grabs the remote for the TV and turns it off and shouts, “Lets do this!”.""",
 
-    "exits": {"east":"Summers", "north": "End"},
+    "exits": {"east":"summers", "north": "end"},
 
     "items": [item_kebab_box],
 
@@ -121,6 +142,9 @@ room_end = {
 }
 
 room_north_building = {
+
+    "id": "nbuilding",
+
     "name": "The North Building",
 
     "description": "There isn't much of any interest here.",
@@ -136,6 +160,9 @@ room_north_building = {
 }
 
 room_matalan = {
+
+    "id": "matalan",
+
     "name": "Matalan",
 
     "description": "There isn't much of any interest here.",
@@ -149,6 +176,9 @@ room_matalan = {
 }
 
 room_wilko = {
+
+    "id": "wilko",
+
     "name": "Wilko",
 
     "description": "There isn't much of any interest here.",
@@ -162,6 +192,9 @@ room_wilko = {
 }
 
 room_walkabout = {
+
+    "id": "walkabout",
+
     "name": "Walkabout",
 
     "description": "There isn't much of any interest here.",
@@ -175,6 +208,9 @@ room_walkabout = {
 }
 
 room_personal_tutors_office = {
+
+    "id": "tutor",
+
     "name": "Your personal Tutor's office",
 
     "description": "There isn't much of any interest here.",
@@ -188,6 +224,9 @@ room_personal_tutors_office = {
 }
 
 room_wetherspoons = {
+
+    "id": "wetherspoons",
+
     "name": "Wetherspoons",
 
     "description": "There isn't much of any interest here.",
@@ -201,6 +240,9 @@ room_wetherspoons = {
 }
 
 room_talybont = {
+
+    "id": "talybont",
+
     "name": "Talybont",
 
     "description": "There isn't much of any interest here.",
@@ -211,6 +253,21 @@ room_talybont = {
 
     "friends": []
 
+}
+
+room_mcdonalds = {
+
+    "id": "mcdonalds",
+
+    "name": "McDonalds",
+
+    "description": "There isn't much of any interest here.",
+
+    "exits": {"east":"flat"},
+
+    "items": [],
+
+    "friends": []
 }
 
 rooms = {
@@ -228,5 +285,6 @@ rooms = {
     "tutor": room_personal_tutors_office,
     "wetherspoons": room_wetherspoons,
     "talybont": room_talybont,
+    "mcdonalds": room_mcdonalds
 
 }

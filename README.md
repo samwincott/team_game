@@ -4,8 +4,7 @@ A team game for the CM1101 module at Cardiff University
 ## syntax rules
 - all lower case
 - if more than one word, underscore in middle such as:
-	- ricks_place
--	
+	- ricks_place	
 
 
 ## files

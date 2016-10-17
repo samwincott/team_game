@@ -236,7 +236,7 @@ def print_menu(exits, room_items, inv_items, room_people):
     global rick_awake
     
     for name in room_people:
-        print("TALK TO " + name["name"] + " to talk to " + name["name"])
+        print("TALK TO " + str(name["name"]).upper() + " to talk to " + name["name"])
 
     for name in room_items:
         print("TAKE " + name["id"] + " to take " + name["name"])

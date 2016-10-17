@@ -270,15 +270,13 @@ def is_valid_exit(exits, chosen_exit):
 def talk_to(person, room):
     """add this"""
 
-    print(person)
-
     people_in_room = current_room["friends"]
 
     for friend in people_in_room:
         if friend["name"] == person:
             print(friend["phrase"])
             return
-    print(person["phrase"])
+    print(person + " is not here.")
       
 
 

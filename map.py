@@ -34,7 +34,7 @@ room_mortys = {
 
     "items": [],
 
-    "friends": [friend_morty]
+    "friends": [friend_morty_without_coat]
 }
 
 room_taf = {

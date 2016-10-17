@@ -23,19 +23,30 @@ friend_rick_awake = {
     "items": [],
 
     "phrase":
-    """I only re-call us being with Morty last night, might want to ask him mate”. """,
+    """I only re-call us being with Morty last night, might want to ask him mate. """,
 
     "memory": []
 
 }
 
-friend_morty = {
-    "name": "summer",
+friend_morty_without_coat = {
+    "name": "morty",
 
     "items": [],
 
     "phrase":
     """Heeeeey!! Whats up man!? From what I recall you guys were pretty crazy last night. Oh you look like you’ve lost your jacket mate? Well from the portion I remember you had it in The Taf, might want to go check there. """,
+
+    "memory": []
+}
+
+friend_morty_with_coat = {
+    "name": "morty",
+
+    "items": [],
+
+    "phrase":
+    """Heeeeey!! You have my jacket!!""",
 
     "memory": []
 }

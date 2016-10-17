@@ -245,7 +245,7 @@ def print_menu(exits, room_items, inv_items, room_people):
         print("DROP " + name["id"] + " to drop your " + name["name"])
         if name["id"] == "bacon":
             print_cook_bacon()     
-    flyer(inv_items)
+    flyer(inventory)
     
     # if rick_awake == True:
     #     print("TALK to talk to Rick") #later add a character dict for all characters
@@ -354,13 +354,12 @@ def execute_cook(item_id):
           print("you cannot cook that")
           return
 
-def flyer(inv_items):
-    for x in inv_items:
-        print("items---" + x["name"])
-        if x["name"] == "jacket":
-            print(current_room["friends"])
-            current_room["friends"].append(friend_morty_with_jacket)
-           # current_room["friends"].remove(friend_morty_without_jacket)
+def flyer(item_id):
+    for item in inventory: 
+        if item["name"] == "jacket" and current_room["id"] == "mortys":
+            current_room["friends"].append(friend_morty_with_coat)
+            current_room["friends"].remove(friend_morty_without_coat)
+            inventory.remove(item)
             return
 
 def execute_command(command):

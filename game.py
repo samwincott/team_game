@@ -5,6 +5,7 @@ from player import *
 from items import *
 from gameparser import *
 from memory import *
+from friend import *
 
 
 
@@ -87,8 +88,11 @@ def print_memory(current_memory):
     """This will print what you currently know about the night before.
     This should be called with the memory inventory in player.py like print_memory(memory)."""
 
-    for x in current_memory:
-        print("You know what happened between " + x["id"] + ".")
+    if list_of_items(current_memory) != (""):
+        for x in current_memory:
+            print("You know what happened between " + x["id"] + ".")
+    else:
+        print("You can't remember anything from last night.")        
 
 def what_happened_between(timeslot):
     """This will print what happened at a specific time slot, given the time"""        
@@ -420,6 +424,7 @@ def main():
         # Display game status (room description, inventory etc.)
         print_room(current_room)
         print_inventory_items(inventory)
+        print_memory(memory)
 
         # Show the menu with possible actions and ask the player
         command = menu(current_room["exits"], current_room["items"], inventory)

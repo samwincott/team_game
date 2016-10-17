@@ -1,14 +1,14 @@
 from items import *
-from map import rooms
+from map import *
 
 
 friend_rick_asleep = {
 
-    "name": "Rick"
+    "name": "Rick",
 
-    "items": []
+    "items": [],
 
-    "phrase": "Rick is asleep, you cannot seem to wake him"
+    "phrase": "Rick is asleep, you cannot seem to wake him",
 
     "memory": []
 

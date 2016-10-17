@@ -9,7 +9,7 @@ room_flat = {
 
     "exits": {"south": "Mortys"},
 
-    "items": [item_bacon,]
+    "items": [item_bacon],
 
     "friends": [friend_rick_asleep]
 }
@@ -26,7 +26,7 @@ room_Mortys = {
 
     "exits":  {"north": "flat", "west":"The_Taf"},
 
-    "items": []
+    "items": [],
 
     "friends": [friend_morty]
 }
@@ -43,7 +43,7 @@ room_taf = {
 
     "exits":  {"east": "Mortys", "south":"PRYZM"},
 
-    "items": [item_jacket]
+    "items": [item_jacket],
 
     "friends": [friend_bar_staff]
 }
@@ -61,7 +61,7 @@ room_PRYZM = {
 
     "exits": {"north": "The_Taf", "west": "Kebab_Shop"},
 
-    "items": []
+    "items": [],
 
     "friends": [friend_club_rep]
 }
@@ -79,7 +79,7 @@ room_kebab = {
 
     "exits": {"east": "PRYZM", "south": "Summers"},
 
-    "items": []
+    "items": [],
 
     "friends": [friend_kebab_worker]
 }
@@ -100,7 +100,7 @@ room_summers = {
 
     "exits": {"north": "Kebab_Shop","west":"End"},
 
-    "items": []
+    "items": [],
 
     "friends": [friend_summer]
 }
@@ -115,7 +115,7 @@ room_end = {
 
     "exits": {"east":"Summers", "north": "End"},
 
-    "items": [item_kebab_box]
+    "items": [item_kebab_box],
 
     "friends": []
 }

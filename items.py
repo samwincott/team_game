@@ -1,7 +1,7 @@
 item_kebab_box = {
     "id": "kebab_box",
 
-    "name": "kebab_box",
+    "name": "kebab box",
 
     "description":
     """This greasy styro-foam box, once contained the power of something great... but now contains the
@@ -51,4 +51,37 @@ item_cooked_bacon = {
 
     "description":
     """You know bacon is good right? But you can't eat it raaw... you sick person... thats why you got to cook it"""
+}
+item_coffee = {
+    "id": "coffee",
+
+    "name": "coffee",
+
+    "description":
+    "Starbucks coffee"
+}
+item_wallet = {
+    "id": "wallet",
+
+    "name": "wallet",
+
+    "description":
+    "Your wallet with some money"
+}
+
+item_eggs = {
+    "id": "eggs",
+
+    "name": "eggs",
+
+    "description":
+    "Some eggs"
+}
+item_key = {
+    "id": "chocolate",
+
+    "name": "chocolate",
+
+    "description":
+    "Some oh so fine Milka"
 }

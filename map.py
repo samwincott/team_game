@@ -11,9 +11,14 @@ room_flat = {
 
     "exits": {"south": "mortys"},
 
-    "items": [item_bacon],
+    "items": [item_bacon, item_kebab_box, item_eggs, item_wallet],
 
-    "friends": [friend_rick_asleep]
+    "friends": [friend_rick_asleep],
+
+
+
+
+
 }
 
 room_mortys = {
@@ -138,7 +143,7 @@ room_starbucks = {
 
     "exits": {"east":"flat"},
 
-    "items": [],
+    "items": [item_coffee],
 
     "friends": [friend_starbucks_worker]
 
@@ -221,6 +226,7 @@ room_talybont = {
     "items": [],
 
     "friends": []
+
 
 }
 

@@ -14,7 +14,7 @@ item_flyer = {
     "name": "flyer",
 
     "description":
-    "some call this junk... others treasure... all you know is that it will guide you through your adventure"
+    "Pryzm BOGOF drinks for one night only!"
 }
 
 item_bacon = {

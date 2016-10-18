@@ -125,8 +125,9 @@ friend_club_rep_walkabout= {
     "items": [],
 
     "phrase":
-    """Hey I remember you, well I remember you being kicked out anyway! """
-    "memory" 
+    """Hey I remember you, well I remember you being kicked out anyway! """,
+
+    "memory": [] 
 
 
 }
@@ -170,7 +171,7 @@ friend_mcdonalds_worker = {
 
     "name" : "Deborah",
     
-    "pharse": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your frinds ,you wont be served here in a long time!",
+    "phrase": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your frinds ,you wont be served here in a long time!",
 
     "memory" : [memory_2_3]
     
@@ -182,7 +183,9 @@ friend_lizzy = {
 
     "name" : "Lizzy",
 
-    "phrase": "Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself"
+    "phrase": "Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself",
+
+    "memory": []
     
     }
 
@@ -192,7 +195,9 @@ friend_sarah= {
 
     "name" : "Sarah",
 
-    "phrase": "Hi"
+    "phrase": "Hi",
+
+    "memory": []
 
     }
 
@@ -203,6 +208,8 @@ friend_joe = {
     "name" : "Joe",
     
     "phrase": "Good to see you're still alive man! ",
+
+    "memory": []
     
     }
 friend_mike = {
@@ -211,7 +218,9 @@ friend_mike = {
 
     "name": "Mike",
 	
-    "phrase": "Oh Hey there man"
+    "phrase": "Oh Hey there man",
+
+    "memory": []
 }
 
 friend_starbucks_worker = {
@@ -220,7 +229,9 @@ friend_starbucks_worker = {
 
     "name": "Starbucks Worker",
 	
-    "phrase": "That'll be £3.50"
+    "phrase": "That'll be £3.50",
+
+    "memory": []
 }
 
 
@@ -230,6 +241,8 @@ friend_wilko_worker = {
 
     "name": "Will",
 
-    "phrase": "Hi, welcome to Wilko, home of the absolute banger of a bargain"
+    "phrase": "Hi, welcome to Wilko, home of the absolute banger of a bargain",
+
+    "memory": []
     
 }

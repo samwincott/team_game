@@ -75,7 +75,7 @@ room_kebab = {
     "name": "Kebab Shop",
 
     "description":
-    """A greesy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
+    """A greasy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
 
     "exits": {"east": "nbuilding", "west": "talybont", "north": "flat"},
 

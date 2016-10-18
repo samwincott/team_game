@@ -464,7 +464,7 @@ def main():
     global rick_awake
     rick_awake = False
 
-    print ("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, acohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key")
+    print ("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, acohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...")
 
     # Main game loop
     while True:

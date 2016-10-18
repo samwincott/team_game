@@ -45,7 +45,7 @@ room_taf = {
 
     "description": """A relaxed bar atmosphere, a few students (Lizzy and Sarah) are drinking casually as Gunther the bartender wipes the bar. """,
 
-    "exits":  {"west": "flat", "south":"wilko", "north": "talybont"},
+    "exits":  {"east": "flat", "south":"wilko", "north": "talybont"},
 
     "items": [item_jacket],
 
@@ -61,7 +61,7 @@ room_pryzm = {
     "description":
     """A totally different setting in the day, but mamabo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
 
-    "exits": {"north": "mcdonalds", "west": "tutor"},
+    "exits": {"south": "mcdonalds", "west": "tutor"},
 
     "items": [],
 
@@ -77,7 +77,7 @@ room_kebab = {
     "description":
     """A greasy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
 
-    "exits": {"east": "nbuilding", "west": "talybont", "north": "flat"},
+    "exits": {"east": "nbuilding", "west": "talybont", "south": "flat"},
 
     "items": [],
 
@@ -93,7 +93,7 @@ room_summers = {
     "description":
     """ An arty room (she's an illustartion student so..). There are paint brushes dottted about the place and pictures getting in the way""",
 
-    "exits": {"south": "flat","west":"wilko", "east": "starbucks"},
+    "exits": {"north": "flat","west":"wilko", "east": "starbucks"},
 
     "items": [],
 

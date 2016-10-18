@@ -97,7 +97,7 @@ room_summers = {
 
     "items": [],
 
-    "friends": [friend_summer_without_coffee]
+    "friends": [friend_summer]
 }
 
 room_end = {

@@ -45,7 +45,9 @@ friend_morty = {
 }
 
 
-friend_summer_without_coffee = {
+friend_summer = {
+
+    "required_level": 11,
 
     "id": "summer",
 
@@ -53,25 +55,16 @@ friend_summer_without_coffee = {
 
     "items": [],
 
-    "phrase":
+    "phrase1":
     """Yeah, I remeber being out with you last night, but you know what, Imma need some coffee to remeber last night properly, I had a lot too""",
 
-    "memory": []
-
-}
-friend_summer_with_coffee = {
-
-    "id": "summer",
-
-    "name": "Summer",    
-
-    "items": [],
-
-    "phrase":
+    "phrase2":
     """For some strange reason you threw most people’s keys into a kebab box and starting hiding it around the house, saying the kebab knight will protect our keys! Which… by the way was not fun when you put it in the bin… which is where I last left it """,
 
     "memory": [memory_4_5]
+
 }
+
 
 friend_bar_staff = {
     
@@ -81,7 +74,7 @@ friend_bar_staff = {
 
     "name": "Gunther",
 
-    "phrase":
+    "phrase2":
     """OH! ITS YOU!? THE LEGEND WHO SMASHED 15 Jaegar Bombs in 5 mins! You were pretty impressive, can’t believe you were still partying after all that! can't say I know what you did after that, but your friend left his coat here, if you could get that abck to him that would be great. """,
 
     "memory" : []
@@ -117,7 +110,7 @@ friend_club_rep_walkabout= {
 
     "items": [],
 
-    "phrase":
+    "phrase2":
     """Hey I remember you, well I remember you being kicked out anyway! """,
 
     "memory": [] 
@@ -135,7 +128,7 @@ friend_kebab_worker_one = {
 
     "items": [],
 
-    "phrase":
+    "phrase2":
     """Hey, yeah you were here last night, you and a girl I think, pretty one she was.  """,
 
     "memory": [memory_3_4]
@@ -153,7 +146,7 @@ friend_kebab_worker_two = {
 
     "items": [],
 
-    "phrase":
+    "phrase2":
     """Hey, I wasn't in last night, but Abdul was, he might know.  """,
 
     "memory": []
@@ -170,9 +163,9 @@ friend_mcdonalds_worker = {
 
     "name" : "Deborah",
     
-    "phrase1": "I'm not serving you right now, come back later when you dont reek of booze"
+    "phrase1": """I'm not serving you right now, come back later when you dont reek of booze""",
 
-    "phrase2": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your friends, you wont be served here in a long time!",
+    "phrase2": """Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your friends, you wont be served here in a long time!""",
 
     "memory" : [memory_2_3]
     
@@ -186,7 +179,7 @@ friend_lizzy = {
 
     "name" : "Lizzy",
 
-    "phrase": "Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself",
+    "phrase2": """Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself""",
 
     "memory": []
     
@@ -200,7 +193,7 @@ friend_sarah= {
 
     "name" : "Sarah",
 
-    "phrase": "Hi",
+    "phrase2": "Hi",
 
     "memory": []
 
@@ -208,33 +201,39 @@ friend_sarah= {
 
 friend_joe = {
     
+    "required_level": 1,
+
     "id": "joe",
 
     "name" : "Joe",
     
-    "phrase": "Good to see you're still alive man! ",
+    "phrase2": """Good to see you're still alive man! """,
 
     "memory": []
     
     }
 friend_mike = {
 	
+    "required_level": 1,
+
     "id": "mike",
 
     "name": "Mike",
 	
-    "phrase": "Oh Hey there man",
+    "phrase2": """Oh Hey there man""",
 
     "memory": []
 }
 
 friend_starbucks_worker = {
 	
+    "required_level": 1,
+
     "id": "starbucks worker",
 
     "name": "Starbucks Worker",
 	
-    "phrase": "That'll be £3.50",
+    "phrase2": "That'll be £3.50",
 
     "memory": []
 }
@@ -242,11 +241,13 @@ friend_starbucks_worker = {
 
 friend_wilko_worker = {
     
+    "required_level": 1,
+    
     "id": "will",
 
     "name": "Will",
 
-    "phrase": "Hi, welcome to Wilko, home of the absolute banger of a bargain",
+    "phrase2": """Hi, welcome to Wilko, home of the absolute banger of a bargain""",
 
     "memory": []
     

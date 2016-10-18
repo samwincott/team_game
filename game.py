@@ -254,6 +254,7 @@ def is_valid_exit(exits, chosen_exit):
     return chosen_exit in exits  
 
 def talk_to(person, room):
+    width = 75
     """add this"""
     global level
     people_in_room = current_room["friends"]
@@ -271,6 +272,7 @@ def talk_to(person, room):
                         level = level + 1
                    
                         print("Memory added: " + mem["id"])
+            
 
             return
                 
@@ -365,8 +367,7 @@ def have_item(item_id):
             level = level + 1
             return
         elif item["name"] == "coffee" and current_room["id"] == "summers":
-            current_room["friends"].append(friend_summer_with_coffee)
-            current_room["friends"].remove(friend_summer_without_coffee)
+            level = level + 1
             inventory.remove(item)
             return
         

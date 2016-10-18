@@ -1,10 +1,8 @@
 To-do list:
 ## Remove things when you're done, and tell people when you're doing them.
 ## Add and remove things from this constantly
-- Formalise
-- what_happened_between function in game.py
-- Need to get it so game.py operates in a basic state - Need to make it so that game.py will choose between descriptions of room depending on whats happened 
-- Need to write story of memorys of what actually happened that night
-- Need to append the memory as we discover the events of 'last night'
+ 
+- impliment room_arcade- add another mini game
 - Bug test the code
-- add mini game in flat
+- proof read everything
+- get people to play the game, see if its too easy or too hard to complete

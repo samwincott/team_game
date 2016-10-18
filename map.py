@@ -8,12 +8,10 @@ room_flat = {
 
     "name": "Your flat",
 
-    "lockout_phrase": "",
-
     "description":
     """Empty bottles litter the kitchen. plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
 
-    "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf"},
+    "exits": {"south": "summers", "north": "talybont", "east": "mortys", "west": "taf"},
 
     "items": [item_bacon, item_kebab_box, item_eggs, item_wallet],
 
@@ -57,7 +55,7 @@ room_taf = {
 
     "description": """A relaxed bar atmosphere, a few students (Lizzy and Sarah) are drinking casually as Gunther the bartender wipes the bar. """,
 
-    "exits":  {"east": "flat", "south":"wilko", "north": "talybont"},
+    "exits":  {"east": "flat", "south":"wilko", "north": "kebab"},
 
     "items": [item_jacket],
 
@@ -73,7 +71,7 @@ room_pryzm = {
     "name": "PRYZM",
 
     "description":
-    """A totally different setting in the day, but mamabo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
+    """A totally different setting in the day, but mambo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
 
     "exits": {"south": "mcdonalds", "west": "tutor"},
 
@@ -84,16 +82,18 @@ room_pryzm = {
 
 room_kebab = {
 
-    "required_level": 4,
+    "required_level": 9,
 
     "id": "kebab",
 
     "name": "Kebab Shop",
 
+    "lockout_phrase": "The kebab shop doesn't seem to be open yet.",
+
     "description":
     """A greasy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
 
-    "exits": {"east": "nbuilding", "west": "talybont", "south": "flat"},
+    "exits": {"east": "talybont", "south": "taf"},
 
     "items": [],
 
@@ -102,11 +102,13 @@ room_kebab = {
 
 room_summers = {
 
-    "required_level": 4,
+    "required_level": 10,
 
-    "id": "summers",   
+    "id": "summers",
 
     "name": "Summer's Place",
+
+    "lockout_phrase": "You knock at the door... but no one answers.",
 
     "description":
     """ An arty room (she's an illustartion student so..). There are paint brushes dottted about the place and pictures getting in the way""",
@@ -145,13 +147,13 @@ room_north_building = {
 
     "description": "There isn't much of any interest here.",
 
-    "exits": {"north":"tutor", "south": "mortys", "east": "mcdonalds", "west": "kebab"},
+    "exits": {"north":"tutor", "south": "mortys", "east": "mcdonalds", "west": "talybont"},
 
     "items": [],
 
     "friends": []
 
-    
+
 
 }
 
@@ -253,9 +255,11 @@ room_talybont = {
 
     "name": "Talybont",
 
+    "lockout_phrase": "I'd better not leave the flat until Rick's awake, I don't have my keys.",
+
     "description": "There isn't much of any interest here.",
 
-    "exits": {"south":"taf", "east": "kebab"},
+    "exits": {"south":"flat", "west": "kebab", "east": "nbuilding"},
 
     "items": [],
 
@@ -272,7 +276,7 @@ room_mcdonalds = {
 
     "name": "McDonalds",
 
-    "description": "An extreemly busy area, Deborah, the manager, is here and may have been last night",
+    "description": "An extremely busy area, Deborah, the manager, is here and may have been last night",
 
     "exits": {"north":"pryzm", "west": "nbuilding", "south": "walkabout"},
 

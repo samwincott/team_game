@@ -9,11 +9,14 @@ from friend import *
 
 
 
-def player_level_check(friend):
+def player_level_check_friend(friend):
     if level >= friend["required_level"]:
         return friend["phrase2"]
     else:
         return friend["phrase1"]
+
+
+
 
 
 def list_of_items(items):
@@ -34,7 +37,7 @@ def list_of_items(items):
         items_list =  items_list + str(key["name"]) + ', '
 
     items_list = items_list[:-2]
-    return items_list    
+    return items_list
 
 def print_room_items(room):
     """This function takes a room as an input and nicely displays a list of items
@@ -54,7 +57,7 @@ def print_room_items(room):
     """
 
     if str(list_of_items(room["items"])) != '':
-        print("There is " + list_of_items(room["items"]) + " here." + "\n")    
+        print("There is " + list_of_items(room["items"]) + " here." + "\n")
 
 
 def print_inventory_items(items):
@@ -65,7 +68,7 @@ def print_inventory_items(items):
     You have id card, laptop, money.
     <BLANKLINE>
     """
-    
+
     if list_of_items(items) != (""):
         print ("You have " + list_of_items(items) + ".\n")
     else:
@@ -76,7 +79,7 @@ def adding_a_memory(timeslot):
     This should be called like adding_a_memory('12pm-1am')"""
 
     memory.append(timeslot)
-    return      
+    return
 
 def print_memory(current_memory):
     """This will print what you currently know about the night before.
@@ -86,16 +89,16 @@ def print_memory(current_memory):
         for x in current_memory:
             print("You know what happened between " + x["id"] + ".")
     else:
-        print("You can't remember anything from last night.")        
+        print("You can't remember anything from last night.")
 
 def what_happened_between(timeslot):
-    """This will print what happened at a specific time slot, given the time""" 
+    """This will print what happened at a specific time slot, given the time"""
 
     if timeslot in memory:
-        print(timeslot["description"])  
+        print(timeslot["description"])
     else:
-        print("You can't remember what happened then.")         
-    
+        print("You can't remember what happened then.")
+
 
 def print_room(room):
     """This function takes a room as an input and nicely displays its name
@@ -175,7 +178,7 @@ def print_exit(direction, leads_to):
     >>> print_exit("south", "MJ and Simon's room")
     GO SOUTH to MJ and Simon's room.
     """
-    
+
     print("GO " + direction.upper() + " to " + leads_to + ".")
 
 
@@ -214,9 +217,9 @@ def print_menu(exits, room_items, inv_items, room_people):
     #
     # COMPLETE ME!
     #
-    
+
     global rick_awake
-    
+
     for name in room_people:
         print("TALK TO " + str(name["name"]).upper() + " to talk to " + name["name"])
 
@@ -224,13 +227,13 @@ def print_menu(exits, room_items, inv_items, room_people):
         print("TAKE " + str(name["id"]).upper() + " to take " + name["name"])
 
     for name in inv_items:
-        print("DROP " + name["id"] + " to drop your " + name["name"])
+        print("DROP " + str(name["id"]).upper() + " to drop your " + name["name"])
         if name["id"] == "bacon":
             print_cook_bacon()
         if name["id"] == "flyer":
             print_read_flyer()
     have_item(inventory)
-    
+
     # if rick_awake == True:
     #     print("TALK to talk to Rick") #later add a character dict for all characters
     print("What do you want to do?")
@@ -251,7 +254,7 @@ def is_valid_exit(exits, chosen_exit):
     >>> is_valid_exit(rooms["Parking"]["exits"], "east")
     True
     """
-    return chosen_exit in exits  
+    return chosen_exit in exits
 
 def talk_to(person, room):
     width = 75
@@ -261,27 +264,27 @@ def talk_to(person, room):
 
     for friend in people_in_room:
         if friend["id"] == person:
-            print(player_level_check(friend))
+            print(player_level_check_friend(friend))
 
             if friend["memory"] != "" and level >= friend["required_level"]:
                 for mem in friend["memory"]:
                     if mem in memory:
-                        return 
+                        return
                     else:
                         memory.append(mem)
                         level = level + 1
-                   
+
                         print("Memory added: " + mem["id"])
-            
+
 
             return
-                
 
 
 
-            
+
+
     print(person + " is not here.")
-      
+
 def remove_all_memories(friend):
     for mem in friend["memory"]:
         friend_memory.remove(mem)
@@ -295,20 +298,29 @@ def execute_go(direction):
 
 
     global current_room
+    global level
+    exits = current_room["exits"]
+    next_room = move(exits, direction)
 
-    if is_valid_exit(current_room["exits"], direction):
-        exits = current_room["exits"]
-        current_room = move(exits, direction)
+    if is_valid_exit(exits, direction):
+        if level < 4:
+            print("I'd better not leave the flat until Rick's awake, I don't have my keys.")
+        elif level < next_room["required_level"]:
+            print(next_room["lockout_phrase"])
+        else:
+
+            current_room = move(exits, direction)
+            print("You went " + str(direction).upper() + " to " + next_room["name"])
     else:
-        print("You cannot go there.")    
+        print("You cannot go there.")
 
 def print_cook_bacon():
     """this function will print an additional action the user can take depending on
     if they have bacon in their inventory"""
- 
+
     print("COOK BACON to cook the bacon")
-    
-    
+
+
 
 
 def execute_take(item_id):
@@ -317,7 +329,7 @@ def execute_take(item_id):
     there is no such item in the room, this function prints
     "You cannot take that."
     """
-    
+
     for item in current_room["items"]:
         if item["id"] == item_id:
             current_room["items"].remove(item)
@@ -326,8 +338,8 @@ def execute_take(item_id):
             return
 
 
-    print("You cannot take that.")        
-    
+    print("You cannot take that.")
+
 
 def execute_drop(item_id):
     """This function takes an item_id as an argument and moves this item from the
@@ -340,27 +352,27 @@ def execute_drop(item_id):
             inventory.remove(item)
             print("You have dropped " + item["id"])
         return
-        
+
     print("You cannot drop that.")
 
-    
+
 
 def execute_cook(item_id):
     global level
     for item in inventory:
       if item["id"] == item_id:
-          print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")  
+          print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")
           inventory.remove(item)
           level = level + 1
 
           return
-      
+
     print("you cannot cook that")
-          
+
 
 def have_item(item_id):
     global level
-    for item in inventory: 
+    for item in inventory:
         if item["name"] == "jacket" and current_room["id"] == "mortys":
             inventory.remove(item)
             inventory.append(item_flyer)
@@ -370,12 +382,12 @@ def have_item(item_id):
             level = level + 1
             inventory.remove(item)
             return
-        
+
 def print_read_flyer():
     print("READ FLYER to read flyer")
 
 def read_flyer(item_id, inventory):
-    
+
     global level
 
     for key in inventory:
@@ -383,10 +395,10 @@ def read_flyer(item_id, inventory):
             print(key["description"])
             level = level + 1
             return
-        
+
     print("you cannot read that.")
 
-            
+
 def execute_command(command):
     """This function takes a command (a list of words as returned by
     normalise_input) and, depending on the type of action (the first word of
@@ -428,7 +440,7 @@ def execute_command(command):
         if len(command) > 1:
             read_flyer(command[1], inventory)
         else:
-            print("that won't help")        
+            print("that won't help")
     else:
         print("This makes no sense.")
 
@@ -465,7 +477,6 @@ def move(exits, direction):
     False
     """
 
-    # Next room to go to
     return rooms[exits[direction]]
 
 
@@ -483,7 +494,7 @@ def main():
     # Main game loop
     while True:
 
-        
+
         print('+-' + '-' * width + '-+')
         # Display game status (room description, inventory etc.)
         print_room(current_room)

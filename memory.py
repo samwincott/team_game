@@ -7,7 +7,7 @@ memory_10_11 = {
     "name": "The events that happened between 10 and 11pm last night.",
 
     "description":
-    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+    """Between 10-11 I was in the flat, drinking with Rick""",
 
     "location": room_flat,
 
@@ -20,7 +20,7 @@ memory_11_12 = {
     "name": "The events that happened between 11 and 12pm last night.",
 
     "description":
-    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+    """Between 11-12 I was at the Taf with Morty""",
 
     "location": room_taf,
 
@@ -33,7 +33,7 @@ memory_12_1 = {
     "name": "The events that happened between 12 and 1am last night.",
 
     "description":
-    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+    """Between 12-1 I was at Walkabout with Morty""",
 
     "location": room_walkabout,
 
@@ -46,7 +46,7 @@ memory_1_2 = {
     "name": "The events that happened between 1 and 2am last night.",
 
     "description":
-    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+    """Between 1-2 I was at Pryzm with Morty""",
 
     "location": room_pryzm,
 
@@ -59,7 +59,7 @@ memory_2_3 = {
     "name": "The events that happened between 2 and 3am last night.",
 
     "description":
-    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+    """Between 2-3 I was messing aobot in McDonalds""",
 
     "location": room_mcdonalds,
 
@@ -72,7 +72,7 @@ memory_3_4 = {
     "name": "The events that happened between 3 and 4am last night.",
 
     "description":
-    """Description of what happened between 10 and 11pm last night -- ADD THIS""",
+    """Between 3-4 I was ordering a kebab with Summer, before heading home""",
 
     "location": room_kebab,
 

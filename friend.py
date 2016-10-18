@@ -220,3 +220,13 @@ friend_starbucks_worker = {
     "phrase": "That'll be £3.50"
 }
 
+
+friend_wilko_worker = {
+    
+    "id": "will ko"
+
+    "name": "Will Ko"
+
+    "phrase": "Hi, welcome to Wilko, home of the absolute banger of a bargain"
+    
+}

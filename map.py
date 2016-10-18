@@ -13,7 +13,7 @@ room_flat = {
 
     "items": [item_bacon, item_kebab_box, item_eggs, item_wallet],
 
-    "friends": [friend_rick_asleep],
+    "friends": [friend_rick],
 
 
 
@@ -34,7 +34,7 @@ room_mortys = {
 
     "items": [],
 
-    "friends": [friend_morty_without_coat]
+    "friends": [friend_morty]
 }
 
 room_taf = {

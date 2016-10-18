@@ -9,6 +9,13 @@ from friend import *
 
 
 
+def player_level_check(friend):
+    if level >= friend["required_level"]:
+        return friend["phrase2"]
+    else:
+        return friend["phrase1"]
+
+
 def list_of_items(items):
     """This function takes a list of items (see items.py for the definition) and
     returns a comma-separated list of item names (as a string). For example:
@@ -196,7 +203,8 @@ def print_menu(exits, room_items, inv_items, room_people):
     DROP MONEY to drop your money.
     What do you want to do?
     """
-    
+    print('\n')
+    print(level)
     print("You can:")
     # Iterate over available exits
     for direction in exits:
@@ -213,7 +221,7 @@ def print_menu(exits, room_items, inv_items, room_people):
         print("TALK TO " + str(name["name"]).upper() + " to talk to " + name["name"])
 
     for name in room_items:
-        print("TAKE " + name["id"] + " to take " + name["name"])
+        print("TAKE " + str(name["id"]).upper() + " to take " + name["name"])
 
     for name in inv_items:
         print("DROP " + name["id"] + " to drop your " + name["name"])
@@ -226,6 +234,7 @@ def print_menu(exits, room_items, inv_items, room_people):
     # if rick_awake == True:
     #     print("TALK to talk to Rick") #later add a character dict for all characters
     print("What do you want to do?")
+    print('\n')
 
 def is_valid_exit(exits, chosen_exit):
     """This function checks, given a dictionary "exits" (see map.py) and
@@ -246,19 +255,20 @@ def is_valid_exit(exits, chosen_exit):
 
 def talk_to(person, room):
     """add this"""
-
+    global level
     people_in_room = current_room["friends"]
 
     for friend in people_in_room:
         if friend["id"] == person:
-            print(friend["phrase"])
+            print(player_level_check(friend))
 
-            if friend["memory"] != "":
+            if friend["memory"] != "" and level >= friend["required_level"]:
                 for mem in friend["memory"]:
                     if mem in memory:
-                        return
+                        return 
                     else:
                         memory.append(mem)
+                        level = level + 1
                    
                         print("Memory added: " + mem["id"])
 
@@ -310,6 +320,7 @@ def execute_take(item_id):
         if item["id"] == item_id:
             current_room["items"].remove(item)
             inventory.append(item)
+            print("You have taken " + item["name"])
             return
 
 
@@ -333,25 +344,25 @@ def execute_drop(item_id):
     
 
 def execute_cook(item_id):
-    global rick_awake
+    global level
     for item in inventory:
       if item["id"] == item_id:
           print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")  
           inventory.remove(item)
-          current_room["friends"].append(friend_rick_awake)
-          current_room["friends"].remove(friend_rick_asleep)
+          level = level + 1
+
           return
       
     print("you cannot cook that")
           
 
 def have_item(item_id):
+    global level
     for item in inventory: 
         if item["name"] == "jacket" and current_room["id"] == "mortys":
-            current_room["friends"].append(friend_morty_with_coat)
-            current_room["friends"].remove(friend_morty_without_coat)
             inventory.remove(item)
             inventory.append(item_flyer)
+            level = level + 1
             return
         elif item["name"] == "coffee" and current_room["id"] == "summers":
             current_room["friends"].append(friend_summer_with_coffee)
@@ -363,9 +374,13 @@ def print_read_flyer():
     print("READ FLYER to read flyer")
 
 def read_flyer(item_id, inventory):
+    
+    global level
+
     for key in inventory:
         if item_id == "flyer" and key["id"] == "flyer":
             print(key["description"])
+            level = level + 1
             return
         
     print("you cannot read that.")
@@ -457,21 +472,36 @@ def move(exits, direction):
 def main():
     global rick_awake
     rick_awake = False
+    width = 75
 
-    print ("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, acohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...")
-
+    print('\n' * 3)
+    print('+-' + '-' * width + '-+')
+    print('\n')
+    print ("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...")
+    print('\n')
     # Main game loop
     while True:
+
+        
+        print('+-' + '-' * width + '-+')
         # Display game status (room description, inventory etc.)
         print_room(current_room)
         print_inventory_items(inventory)
         print_memory(memory)
 
+        print('\n')
+        print('+-' + '-' * width + '-+')
         # Show the menu with possible actions and ask the player
         command = menu(current_room["exits"], current_room["items"], inventory, current_room["friends"])
 
+        print('\n' * 100)
+        print('+-' + '-' * width + '-+')
         # Execute the player's command
+
         execute_command(command)
+
+
+
 
 
 

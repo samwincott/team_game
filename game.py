@@ -364,17 +364,12 @@ def print_read_flyer():
     print("READ FLYER to read flyer")
 
 def read_flyer(item_id, inventory):
-    for x in inventory:
-        if x["id"] == "flyer":
-             for key in inventory:
-                if item_id == "flyer":
-                    print(key["description"])
-                    return
-                else:
-                    print("you cannot read that.")
-                    return
-        else:
-            print("you cannot read that.")
+    for key in inventory:
+        if item_id == "flyer" and key["id"] == "flyer":
+            print(key["description"])
+            return
+        
+    print("you cannot read that.")
 
             
 def execute_command(command):

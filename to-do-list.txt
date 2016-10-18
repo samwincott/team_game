@@ -7,3 +7,4 @@ To-do list:
 - Need to write story of memorys of what actually happened that night
 - Need to append the memory as we discover the events of 'last night'
 - Bug test the code
+- add mini game in flat

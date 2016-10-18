@@ -223,9 +223,9 @@ friend_starbucks_worker = {
 
 friend_wilko_worker = {
     
-    "id": "will ko"
+    "id": "will",
 
-    "name": "Will Ko"
+    "name": "Will",
 
     "phrase": "Hi, welcome to Wilko, home of the absolute banger of a bargain"
     

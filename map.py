@@ -9,7 +9,7 @@ room_flat = {
     "description":
     """Empty bottles litter the kitchen. plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
 
-    "exits": {"south": "mortys"},
+    "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf"},
 
     "items": [item_bacon, item_kebab_box, item_eggs, item_wallet],
 
@@ -30,7 +30,7 @@ room_mortys = {
     "description":
     """A clean and tidy flat. In his room is his high end gaming computer hooked to a large monitor which dominates the room (There's a reason you're friends with him)""",
 
-    "exits":  {"north": "flat", "west":"taf"},
+    "exits":  {"north": "nbuilding", "west":"flat", "south": "starbucks", "east": "walkabout"},
 
     "items": [],
 
@@ -45,7 +45,7 @@ room_taf = {
 
     "description": """A relaxed bar atmosphere, a few students (Lizzy and Sarah) are drinking casually as Gunther the bartender wipes the bar. """,
 
-    "exits":  {"east": "mortys", "south":"pryzm"},
+    "exits":  {"west": "flat", "south":"wilko", "north": "talybont"},
 
     "items": [item_jacket],
 
@@ -61,7 +61,7 @@ room_pryzm = {
     "description":
     """A totally different setting in the day, but mamabo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
 
-    "exits": {"north": "taf", "west": "kebab"},
+    "exits": {"north": "mcdonalds", "west": "tutor"},
 
     "items": [],
 
@@ -77,7 +77,7 @@ room_kebab = {
     "description":
     """A greesy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
 
-    "exits": {"east": "pryzm", "south": "summers"},
+    "exits": {"east": "nbuilding", "west": "talybont", "north": "flat"},
 
     "items": [],
 
@@ -93,7 +93,7 @@ room_summers = {
     "description":
     """ An arty room (she's an illustartion student so..). There are paint brushes dottted about the place and pictures getting in the way""",
 
-    "exits": {"north": "kebab","west":"end"},
+    "exits": {"south": "flat","west":"wilko", "east": "starbucks"},
 
     "items": [],
 
@@ -123,7 +123,7 @@ room_north_building = {
 
     "description": "There isn't much of any interest here.",
 
-    "exits": {"east":"flat"},
+    "exits": {"north":"tutor", "south": "mortys", "east": "mcdonalds", "west": "kebab"},
 
     "items": [],
 
@@ -135,13 +135,13 @@ room_north_building = {
 
 room_starbucks = {
 
-    "id": "matalan",
+    "id": "starbucks",
 
-    "name": "Matalan",
+    "name": "Starbucks",
 
     "description": "A busy starbucks, no one looks like they want to talk, best grab a coffee and get out the way.",
 
-    "exits": {"east":"flat"},
+    "exits": {"north":"mortys", "west": "summers", "east": "wetherspoons"},
 
     "items": [item_coffee],
 
@@ -157,11 +157,11 @@ room_wilko = {
 
     "description": "There isn't much of any interest here.",
 
-    "exits": {"east":"flat"},
+    "exits": {"north":"taf", "east": "summers"},
 
     "items": [],
 
-    "friends": []
+    "friends": [friend_wilko_worker]
 
 }
 
@@ -173,7 +173,7 @@ room_walkabout = {
 
     "description": "A stange site in the day, the club rep (Bob) stands there and greets you on your way in and is stopping you from looking around",
 
-    "exits": {"east":"flat"},
+    "exits": {"west":"mortys", "north": "mcdonalds", "south": "wetherspoons"},
 
     "items": [],
 
@@ -189,7 +189,7 @@ room_personal_tutors_office = {
 
     "description": "There isn't much of any interest here.",
 
-    "exits": {"east":"flat"},
+    "exits": {"south":"nbuilding", "east": "pryzm"},
 
     "items": [],
 
@@ -205,7 +205,7 @@ room_wetherspoons = {
 
     "description": "Populated by people having lunch and the occasional alcoholic, no body you know is here. However there are some very nice looking glasses there that would be great for the flat...",
 
-    "exits": {"east":"flat"},
+    "exits": {"north":"walkabout", "west": "starbucks"},
 
     "items": [],
 
@@ -221,7 +221,7 @@ room_talybont = {
 
     "description": "There isn't much of any interest here.",
 
-    "exits": {"east":"flat"},
+    "exits": {"south":"taf", "east": "kebab"},
 
     "items": [],
 
@@ -238,7 +238,7 @@ room_mcdonalds = {
 
     "description": "An extreemly busy area, Deborah, the manager, is here and may have been last night",
 
-    "exits": {"east":"flat"},
+    "exits": {"north":"pryzm", "west": "nbuilding", "south": "walkabout"},
 
     "items": [],
 

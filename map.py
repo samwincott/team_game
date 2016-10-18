@@ -2,9 +2,13 @@ from items import *
 from friend import *
 room_flat = {
 
+    "required_level": 1,
+
     "id": "flat",
 
     "name": "Your flat",
+
+    "lockout_phrase": "",
 
     "description":
     """Empty bottles litter the kitchen. plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
@@ -23,9 +27,13 @@ room_flat = {
 
 room_mortys = {
 
+    "required_level": 4,
+
     "id": "mortys",
 
     "name": "Mortys",
+
+    "lockout_phrase": "I'd better not leave the flat until Rick's awake, I don't have my keys.",
 
     "description":
     """A clean and tidy flat. In his room is his high end gaming computer hooked to a large monitor which dominates the room (There's a reason you're friends with him)""",
@@ -39,9 +47,13 @@ room_mortys = {
 
 room_taf = {
 
+    "required_level": 4,
+
     "id": "taf",
 
     "name": "The Taf",
+
+    "lockout_phrase": "I'd better not leave the flat until Rick's awake, I don't have my keys.",
 
     "description": """A relaxed bar atmosphere, a few students (Lizzy and Sarah) are drinking casually as Gunther the bartender wipes the bar. """,
 
@@ -53,6 +65,8 @@ room_taf = {
 }
 
 room_pryzm = {
+
+    "required_level": 4,
 
     "id": "pryzm",
 
@@ -70,6 +84,8 @@ room_pryzm = {
 
 room_kebab = {
 
+    "required_level": 4,
+
     "id": "kebab",
 
     "name": "Kebab Shop",
@@ -85,6 +101,8 @@ room_kebab = {
 }
 
 room_summers = {
+
+    "required_level": 4,
 
     "id": "summers",   
 
@@ -102,6 +120,8 @@ room_summers = {
 
 room_end = {
 
+    "required_level": 4,
+
     "id": "end",
 
     "name": "End",
@@ -116,6 +136,8 @@ room_end = {
 }
 
 room_north_building = {
+
+    "required_level": 4,
 
     "id": "nbuilding",
 
@@ -135,6 +157,8 @@ room_north_building = {
 
 room_starbucks = {
 
+    "required_level": 4,
+
     "id": "starbucks",
 
     "name": "Starbucks",
@@ -150,6 +174,8 @@ room_starbucks = {
 }
 
 room_wilko = {
+
+    "required_level": 4,
 
     "id": "wilko",
 
@@ -167,6 +193,8 @@ room_wilko = {
 
 room_walkabout = {
 
+    "required_level": 4,
+
     "id": "walkabout",
 
     "name": "Walkabout",
@@ -182,6 +210,8 @@ room_walkabout = {
 }
 
 room_personal_tutors_office = {
+
+    "required_level": 4,
 
     "id": "tutor",
 
@@ -199,6 +229,8 @@ room_personal_tutors_office = {
 
 room_wetherspoons = {
 
+    "required_level": 4,
+
     "id": "wetherspoons",
 
     "name": "Wetherspoons",
@@ -214,6 +246,8 @@ room_wetherspoons = {
 }
 
 room_talybont = {
+
+    "required_level": 4,
 
     "id": "talybont",
 
@@ -231,6 +265,8 @@ room_talybont = {
 }
 
 room_mcdonalds = {
+
+    "required_level": 4,
 
     "id": "mcdonalds",
 

@@ -1,7 +1,7 @@
 item_kebab_box = {
-    "id": "kebab_box",
+    "id": "container",
 
-    "name": "kebab box",
+    "name": "kebab container",
 
     "description":
     """This greasy styro-foam box, once contained the power of something great... but now contains the
@@ -77,7 +77,7 @@ item_eggs = {
     "description":
     "Some eggs"
 }
-item_key = {
+item_chocolate = {
     "id": "chocolate",
 
     "name": "chocolate",

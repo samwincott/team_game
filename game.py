@@ -15,8 +15,27 @@ def player_level_check_friend(friend):
     else:
         return friend["phrase1"]
 
-
-
+def find_key(item_id, level):
+    global current_room
+    for key in inventory:
+        if key["id"] == "container":    
+            if level >= 12 and item_id == "container":
+                print("You open the kebab container and you find a shiny object covered in sweet chilli sauce and garlic mayonnaise, you have THE KEY")
+                inventory.append(item_key)
+                return
+            elif level <= 11 or item_id == "container":
+                print("The smell is vile and you quickly put the container down!!")
+                return
+            if item_id == "bedroom":
+                for key in inventory:
+                    if key["id"] == "key":
+                        print("You have opended your Bedroom")
+                        current_room = room_bedroom
+                        return
+            else:
+                print("You cannot open that!")
+                return    
+    print("You cannot open that!")
 
 
 def list_of_items(items):
@@ -228,11 +247,18 @@ def print_menu(exits, room_items, inv_items, room_people):
 
     for name in inv_items:
         print("DROP " + str(name["id"]).upper() + " to drop your " + name["name"])
+
+    for name in inv_items:
+        if name["id"] == "container":
+            print("OPEN " + str(name["id"]).upper() + " to open your " + name["name"])
         if name["id"] == "bacon":
             print_cook_bacon()
         if name["id"] == "flyer":
             print_read_flyer()
+        if name["id"] == "key":
+            print("OPEN BEDROOM to open your Bedroom")
     have_item(inventory)
+    
 
     # if rick_awake == True:
     #     print("TALK to talk to Rick") #later add a character dict for all characters
@@ -306,9 +332,8 @@ def execute_go(direction):
         if level < 4:
             print("I'd better not leave the flat until Rick's awake, I don't have my keys.")
         elif level < next_room["required_level"]:
-            print(next_room["lockout_phrase"])
+            print(next_room["lockout_phrase"])    
         else:
-
             current_room = move(exits, direction)
             print("You went " + str(direction).upper() + " to " + next_room["name"])
     else:
@@ -441,6 +466,11 @@ def execute_command(command):
             read_flyer(command[1], inventory)
         else:
             print("that won't help")
+    elif command[0] == "open":
+        if len(command) > 1:
+            find_key(command[1], level)
+        else:
+            print("that won't help")       
     else:
         print("This makes no sense.")
 
@@ -504,8 +534,8 @@ def main():
         print('\n')
         print('+-' + '-' * width + '-+')
         # Show the menu with possible actions and ask the player
+        print("current room" + current_room["name"])
         command = menu(current_room["exits"], current_room["items"], inventory, current_room["friends"])
-
         print('\n' * 100)
         print('+-' + '-' * width + '-+')
         # Execute the player's command

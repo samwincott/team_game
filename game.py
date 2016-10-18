@@ -321,17 +321,15 @@ def execute_drop(item_id):
     player's inventory to list of items in the current room. However, if there is
     no such item in the inventory, this function prints "You cannot drop that."
     """
-    print(item_id)
     for item in inventory:
         if item["id"] == item_id:
             current_room["items"].append(item)
-            
             inventory.remove(item)
-            return
-    
-    
-
+        return
+        
     print("You cannot drop that.")
+
+    
 
 def execute_cook(item_id):
     global rick_awake

@@ -252,10 +252,27 @@ def talk_to(person, room):
     for friend in people_in_room:
         if friend["id"] == person:
             print(friend["phrase"])
+
+            if friend["memory"] != "":
+                for mem in friend["memory"]:
+                    if mem in memory:
+                        return
+                    else:
+                        memory.append(mem)
+                   
+                        print("Memory added: " + mem["id"])
+
             return
+                
+
+
+
+            
     print(person + " is not here.")
       
-
+def remove_all_memories(friend):
+    for mem in friend["memory"]:
+        friend_memory.remove(mem)
 
 def execute_go(direction):
     """This function, given the direction (e.g. "south") updates the current room

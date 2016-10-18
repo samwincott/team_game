@@ -1,5 +1,6 @@
 from items import *
 from map import *
+from memory import*
 
 
 friend_rick_asleep = {
@@ -29,7 +30,7 @@ friend_rick_awake = {
     "phrase":
     """mm mmm mmmm, is that bacon I smell? Absoulutely the best thing to wake up to. As for your key, no idea mate. To be honest, I dont remember a hell of a lot from last night, I know we were here for a bit having some drinks, then you went out with Mortey to the Taff I think. Sorry mate, that's all I know”. """,
 
-    "memory": []
+    "memory": [memory_10_11, memory_11_12]
 
 }
 
@@ -43,7 +44,7 @@ friend_morty_without_coat = {
     "phrase":
     """Oh hey man! Good night last night mate, bloody lost my coat though. Can't say I remember anythign about your key, but hey after the Taff I know we went to walkabout for an hour or so before going to another club, but I can't for the life of me remember the name of the place""",
 
-    "memory": []
+    "memory": [memory_12_1]
 }
 
 friend_morty_with_coat = {
@@ -84,7 +85,7 @@ friend_summer_with_coffee = {
     "phrase":
     """For some strange reason you threw most people’s keys into a kebab box and starting hiding it around the house, saying the kebab knight will protect our keys! Which… by the way was not fun when you put it in the bin… which is where I last left it """,
 
-    "memory": []
+    "memory": [memory_4_5]
 }
 
 friend_bar_staff = {
@@ -109,8 +110,8 @@ friend_club_rep_pryzm = {
     "items": [],
 
     "phrase":
-    """ I have no idea what happened to you last night, I'm guessing you went for some food, by how you lads were dancing, you would have worked up an apetite"""
-    "memory" 
+    """ You guys were here yeah, from about 1. I have no idea what happened to your key last night, we haven't had anything handed in, I'm guessing you went for some food, by how you lads were dancing, you would have worked up an apetite""",
+    "memory": [memory_1_2]
 
 
 }
@@ -141,7 +142,7 @@ friend_kebab_worker_one = {
     "phrase":
     """Hey, yeah you were here last night, you and a girl I think, pretty one she was.  """,
 
-    "memory": []
+    "memory": [memory_3_4]
 
 
 
@@ -169,7 +170,9 @@ friend_mcdonalds_worker = {
 
     "name" : "Deborah",
     
-    "pharse": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your frinds ,you wont be served here in a long time!"
+    "pharse": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your frinds ,you wont be served here in a long time!",
+
+    "memory" : [memory_2_3]
     
     }
 

@@ -9,9 +9,7 @@ memory_10_11 = {
     "description":
     """Between 10-11 I was in the flat, drinking with Rick""",
 
-    "location": room_flat,
-
-    "with": [friend_rick_awake,]
+    
 }
 
 memory_11_12 = {
@@ -22,9 +20,7 @@ memory_11_12 = {
     "description":
     """Between 11-12 I was at the Taf with Morty""",
 
-    "location": room_taf,
-
-    "with": ["friend 1", "friend 2"]
+    
 }
 
 memory_12_1 = {
@@ -35,9 +31,7 @@ memory_12_1 = {
     "description":
     """Between 12-1 I was at Walkabout with Morty""",
 
-    "location": room_walkabout,
-
-    "with": ["friend 1", "friend 2"]
+    
 }
 
 memory_1_2 = {
@@ -48,9 +42,7 @@ memory_1_2 = {
     "description":
     """Between 1-2 I was at Pryzm with Morty""",
 
-    "location": room_pryzm,
-
-    "with": ["friend 1", "friend 2"]
+  
 }
 
 memory_2_3 = {
@@ -61,9 +53,7 @@ memory_2_3 = {
     "description":
     """Between 2-3 I was messing aobot in McDonalds""",
 
-    "location": room_mcdonalds,
-
-    "with": ["friend 1", "friend 2"]
+    
 }
 
 memory_3_4 = {
@@ -74,10 +64,17 @@ memory_3_4 = {
     "description":
     """Between 3-4 I was ordering a kebab with Summer, before heading home""",
 
-    "location": room_kebab,
-
-    "with": [friend_kebab_worker_one, friend_summer_with_coffee, friend_rick_awake]
+  
 }
 
+memory_4_5 = {
+    "id": "4am-5am",
 
+    "name": "The events that happened between 4 and 5am last night.",
+
+    "description":
+    """I put my key in a kebab box in the Flat!!!""",
+
+    
+}
 

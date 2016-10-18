@@ -65,7 +65,7 @@ room_pryzm = {
 
     "items": [],
 
-    "friends": [friend_club_rep, friend_joe, friend_mike]
+    "friends": [friend_club_rep_pryzm, friend_joe, friend_mike]
 }
 
 room_kebab = {
@@ -177,7 +177,7 @@ room_walkabout = {
 
     "items": [],
 
-    "friends": [friend_club_rep]
+    "friends": [friend_club_rep_walkabout]
 
 }
 

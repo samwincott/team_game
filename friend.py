@@ -100,7 +100,7 @@ friend_bar_staff = {
 
 }
 
-friend_club_rep = {
+friend_club_rep_pryzm = {
 
     "id": "joseph",
 
@@ -110,6 +110,21 @@ friend_club_rep = {
 
     "phrase":
     """ I have no idea what happened to you last night, I'm guessing you went for some food, by how you lads were dancing, you would have worked up an apetite"""
+    "memory" 
+
+
+}
+
+friend_club_rep_walkabout= {
+
+    "id": "james",
+
+    "name": "James",
+
+    "items": [],
+
+    "phrase":
+    """Hey I remember you, well I remember you being kicked out anyway! """
     "memory" 
 
 
@@ -205,12 +220,3 @@ friend_starbucks_worker = {
     "phrase": "That'll be £3.50"
 }
 
-friend_wilko_worker = {
-    
-    "id": "will ko"
-
-    "name": "Will Ko"
-
-    "phrase": "Hi, welcome to Wilko, home of the absolute banger of a bargain"
-    
-}

@@ -342,9 +342,9 @@ def execute_cook(item_id):
           current_room["friends"].append(friend_rick_awake)
           current_room["friends"].remove(friend_rick_asleep)
           return
-      else:
-          print("you cannot cook that")
-          return
+      
+    print("you cannot cook that")
+          
 
 def have_item(item_id):
     for item in inventory: 

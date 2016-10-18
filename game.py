@@ -250,7 +250,7 @@ def talk_to(person, room):
     people_in_room = current_room["friends"]
 
     for friend in people_in_room:
-        if friend["name"] == person:
+        if friend["id"] == person:
             print(friend["phrase"])
             return
     print(person + " is not here.")

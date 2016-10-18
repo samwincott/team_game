@@ -4,7 +4,9 @@ from map import *
 
 friend_rick_asleep = {
 
-    "name": "rick",
+    "id": "rick",
+
+    "name": "Rick",
 
     "items": [],
 
@@ -18,7 +20,9 @@ friend_rick_asleep = {
 
 friend_rick_awake = {
 
-    "name": "rick",
+    "id": "rick",
+
+    "name": "Rick",
 
     "items": [],
 
@@ -30,7 +34,9 @@ friend_rick_awake = {
 }
 
 friend_morty_without_coat = {
-    "name": "morty",
+    "id": "morty",
+
+    "name": "Morty",
 
     "items": [],
 
@@ -41,7 +47,9 @@ friend_morty_without_coat = {
 }
 
 friend_morty_with_coat = {
-    "name": "morty",
+    "id": "morty",
+
+    "name": "Morty",
 
     "items": [],
 
@@ -53,6 +61,10 @@ friend_morty_with_coat = {
 
 friend_summer_without_coffee = {
 
+    "id": "summer",
+
+    "name": "Summer",
+
     "items": [],
 
     "phrase":
@@ -63,6 +75,10 @@ friend_summer_without_coffee = {
 }
 friend_summer_with_coffee = {
 
+    "id": "summer",
+
+    "name": "Summer",    
+
     "items": [],
 
     "phrase":
@@ -72,6 +88,8 @@ friend_summer_with_coffee = {
 }
 
 friend_bar_staff = {
+
+    "id": "gunther",
 
     "name": "Gunther",
 
@@ -84,7 +102,9 @@ friend_bar_staff = {
 
 friend_club_rep = {
 
-    "name": "club",
+    "id": "joseph",
+
+    "name": "Joseph",
 
     "items": [],
 
@@ -97,7 +117,9 @@ friend_club_rep = {
 
 friend_kebab_worker_one = {
 
-    "name": "kebabby",
+    "id": "abdul",
+
+    "name": "Abdul",
 
     "items": [],
 
@@ -111,12 +133,14 @@ friend_kebab_worker_one = {
 }
 friend_kebab_worker_two = {
 
-    "name": "kebabby",
+    "id": "greg",
+
+    "name": "Greg",
 
     "items": [],
 
     "phrase":
-    """Hey, I wasn't in last night, but kebabby was, he might know.  """,
+    """Hey, I wasn't in last night, but Abdul was, he might know.  """,
 
     "memory": []
 
@@ -125,30 +149,58 @@ friend_kebab_worker_two = {
 }
 
 friend_mcdonalds_worker = {
+    
+    "id": "deborah",
+
     "name" : "Deborah",
+    
     "pharse": "Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your frinds ,you wont be served here in a long time!"
+    
     }
 
 friend_lizzy = {
+    
+    "id": "lizzy",
+
     "name" : "Lizzy",
-    "pharse": "Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself"
+
+    "phrase": "Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself"
+    
     }
 
 friend_sarah= {
+    
+    "id": "sarah",
+
     "name" : "Sarah",
-    "pharse": "Hi"
+
+    "phrase": "Hi"
+
     }
 
 friend_joe = {
+    
+    "id": "joe",
+
     "name" : "Joe",
-    "pharse": "Good to see you're still alive man! ",
+    
+    "phrase": "Good to see you're still alive man! ",
+    
     }
 friend_mike = {
-	"name": "Mike",
-	"phrase": "Oh Hey there man"
+	
+    "id": "mike",
+
+    "name": "Mike",
+	
+    "phrase": "Oh Hey there man"
 }
 
 friend_starbucks_worker = {
-	"name": "starbucks worker",
-	"phrase": "That'll be £3.50"
+	
+    "id": "starbucks worker",
+
+    "name": "Starbucks Worker",
+	
+    "phrase": "That'll be £3.50"
 }

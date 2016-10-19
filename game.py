@@ -130,7 +130,6 @@ def print_exit(direction, leads_to):
 def print_menu(exits, room_items, inv_items, room_people):
   
     print('\n')
-    print(level)
     print("You can:")
     # Iterate over available exits
     for direction in exits:
@@ -406,7 +405,6 @@ def main():
         print('\n')
         print('+-' + '-' * width + '-+')
         # Show the menu with possible actions and ask the player
-        print("Current room: " + current_room["name"])
         command = menu(current_room["exits"], current_room["items"], inventory, current_room["friends"])
         print('\n' * 100)
         print('+-' + '-' * width + '-+')

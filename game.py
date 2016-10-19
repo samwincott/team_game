@@ -6,6 +6,7 @@ from memory import *
 from friend import *
 from minigame import *
 import textwrap
+from minigame2 import *
 
 def player_level_check_friend(friend):
     if level >= friend["required_level"]:
@@ -149,6 +150,7 @@ def print_menu(exits, room_items, inv_items, room_people):
             print("OPEN BEDROOM to open your Bedroom")
     if current_room["name"] == "Arcade":
         print("PLAY GAME to play on arcade machine")
+        print("PLAY GAME2 to play second arcade machine")
     have_item(inventory)
     print("What do you want to do?")
     print('\n')
@@ -286,6 +288,9 @@ def read_flyer(item_id, inventory):
 def play_on_phone(command):
     if command == "game":
         mini()
+    elif command == "game2":
+        mini_game_2()
+
     
 def execute_command(command):
 

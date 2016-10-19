@@ -304,7 +304,8 @@ def play_on_phone(command):
         mini()
     elif command == "game2":
         mini_game_2()
-
+    else:
+        print("You can't play " + command)
     
 def execute_command(command):
 

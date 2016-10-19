@@ -197,7 +197,7 @@ def talk_to(person, room):
     """add this"""
     global level
     people_in_room = current_room["friends"]
-    if person == "gunther":
+    if person == "gunther" and current_room == rooms["taf"]:
         if inventory == []:
             inventory.append(item_jacket)
             
@@ -209,7 +209,7 @@ def talk_to(person, room):
                 
             inventory.append(item_jacket)
 
-    elif person == "barista":
+    elif person == "barista" and current_room == rooms["starbucks"]:
         inventory.append(item_coffee)
     for friend in people_in_room:
         if friend["id"] == person:

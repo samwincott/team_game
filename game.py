@@ -40,18 +40,6 @@ def find_key(item_id, level):
 
 
 def list_of_items(items):
-    """This function takes a list of items (see items.py for the definition) and
-    returns a comma-separated list of item names (as a string). For example:
-    >>> list_of_items([item_pen, item_handbook])
-    'a pen, a student handbook'
-    >>> list_of_items([item_id])
-    'id card'
-    >>> list_of_items([])
-    ''
-    >>> list_of_items([item_money, item_handbook, item_laptop])
-    'money, a student handbook, laptop'
-    """
-
     items_list =''
     for key in items:
         items_list =  items_list + str(key["name"]) + ', '
@@ -60,14 +48,11 @@ def list_of_items(items):
     return items_list
 
 def print_room_items(room):
-
     if str(list_of_items(room["items"])) != '':
         print("There is " + list_of_items(room["items"]) + " here." + "\n")
 
 
 def print_inventory_items(items):
-
-
     if list_of_items(items) != (""):
         print ("You have " + list_of_items(items) + ".\n")
     else:
@@ -156,13 +141,7 @@ def print_menu(exits, room_items, inv_items, room_people):
             print("OPEN BEDROOM to open your Bedroom")
     if current_room["name"] == "Arcade":
         print("PLAY GAME to play on arcade machine")
-        
-        #print("PLAY ARACDE to play on the arcade machine")
     have_item(inventory)
-    
-
-    # if rick_awake == True:
-    #     print("TALK to talk to Rick") #later add a character dict for all characters
     print("What do you want to do?")
     print('\n')
 
@@ -204,13 +183,6 @@ def remove_all_memories(friend):
         friend_memory.remove(mem)
 
 def execute_go(direction):
-    """This function, given the direction (e.g. "south") updates the current room
-    to reflect the movement of the player if the direction is a valid exit
-    (and prints the name of the room into which the player is
-    moving). Otherwise, it prints "You cannot go there."
-    """
-
-
     global current_room
     global level
     exits = current_room["exits"]
@@ -237,12 +209,6 @@ def print_cook_bacon():
 
 
 def execute_take(item_id):
-    """This function takes an item_id as an argument and moves this item from the
-    list of items in the current room to the player's inventory. However, if
-    there is no such item in the room, this function prints
-    "You cannot take that."
-    """
-
     for item in current_room["items"]:
         if item["id"] == item_id:
             current_room["items"].remove(item)
@@ -255,10 +221,6 @@ def execute_take(item_id):
 
 
 def execute_drop(item_id):
-    """This function takes an item_id as an argument and moves this item from the
-    player's inventory to list of items in the current room. However, if there is
-    no such item in the inventory, this function prints "You cannot drop that."
-    """
     for item in inventory:
         if item["id"] == item_id:
             current_room["items"].append(item)
@@ -316,11 +278,6 @@ def play_on_phone(command):
         mini()
     
 def execute_command(command):
-    """This function takes a command (a list of words as returned by
-    normalise_input) and, depending on the type of action (the first word of
-    the command: "go", "take", or "drop"), executes either execute_go,
-    execute_take, or execute_drop, supplying the second word as the argument.
-    """
 
     if 0 == len(command):
         return
@@ -372,12 +329,6 @@ def execute_command(command):
 
 
 def menu(exits, room_items, inv_items, room_people):
-    """This function, given a dictionary of possible exits from a room, and a list
-    of items found in the room and carried by the player, prints the menu of
-    actions using print_menu() function. It then prompts the player to type an
-    action. The players's input is normalised using the normalise_input()
-    function before being returned.
-    """
 
     # Display menu
     print_menu(exits, room_items, inv_items, room_people)
@@ -392,17 +343,6 @@ def menu(exits, room_items, inv_items, room_people):
 
 
 def move(exits, direction):
-    """This function returns the room into which the player will move if, from a
-    dictionary "exits" of avaiable exits, they choose to move towards the exit
-    with the name given by "direction". For example:
-    >>> move(rooms["Reception"]["exits"], "south") == rooms["Admins"]
-    True
-    >>> move(rooms["Reception"]["exits"], "east") == rooms["Tutor"]
-    True
-    >>> move(rooms["Reception"]["exits"], "west") == rooms["Office"]
-    False
-    """
-
     return rooms[exits[direction]]
 
 

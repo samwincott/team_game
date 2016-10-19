@@ -73,7 +73,7 @@ room_pryzm = {
     "name": "PRYZM",
 
     "description":
-    """A totally different setting in the day, but mamabo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
+    """A totally different setting in the day, but mambo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
 
     "exits": {"south": "mcdonalds", "west": "tutor"},
 
@@ -84,11 +84,13 @@ room_pryzm = {
 
 room_kebab = {
 
-    "required_level": 4,
+    "required_level": 9,
 
     "id": "kebab",
 
     "name": "Kebab Shop",
+
+    "lockout_phrase": "It seems the kebab shop is not open yet.",
 
     "description":
     """A greasy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
@@ -102,11 +104,13 @@ room_kebab = {
 
 room_summers = {
 
-    "required_level": 4,
+    "required_level": 10,
 
     "id": "summers",   
 
     "name": "Summer's Place",
+
+    "lockout_phrase": "You knock at the door... but no one answers",
 
     "description":
     """ An arty room (she's an illustartion student so..). There are paint brushes dottted about the place and pictures getting in the way""",

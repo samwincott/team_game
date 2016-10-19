@@ -15,7 +15,7 @@ friend_rick = {
 
     "phrase1": "Rick is asleep, you cannot seem to wake him",
 
-    "phrase2": """mm mmm mmmm, is that bacon I smell? Absoulutely the best thing to wake up to. As for your key, no idea mate. To be honest, I dont remember a hell of a lot from last night, I know we were here for a bit having some drinks, then you went out with Mortey to the Taff I think. Sorry mate, that's all I know”. """,
+    "phrase2": """Mm mmm mmmm, is that bacon I smell? Absoulutely the best thing to wake up to. As for your key, no idea mate. To be honest, I dont remember a whole lot from last night, I know we were here for a bit having some drinks, then you went out with Morty to the Taf I think. Sorry mate, that's all I know. """,
 
     "memory": [memory_10_11, memory_11_12]
 
@@ -75,7 +75,7 @@ friend_bar_staff = {
     "name": "Gunther",
 
     "phrase2":
-    """OH! ITS YOU!? THE LEGEND WHO SMASHED 15 Jaegar Bombs in 5 mins! You were pretty impressive, can’t believe you were still partying after all that! can't say I know what you did after that, but your friend left his coat here, if you could get that abck to him that would be great. """,
+    """OH! ITS YOU!? THE LEGEND WHO SMASHED 15 Jaegar Bombs in 5 mins! That was pretty impressive, hard to believe you were still partying after all that! Not sure know what you did after that, but your friend left his coat here, if you could get that back to him that would be great. """,
 
     "memory" : []
 

@@ -24,7 +24,7 @@ def find_key(item_id, level):
                 inventory.append(item_key)
                 return
             elif level <= 11 or item_id == "container":
-                print("The smell is vile and you quickly put the container down!!")
+                print("The smell is vile and you quickly put the container away!!")
                 return
             if item_id == "bedroom":
                 for key in inventory:

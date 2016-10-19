@@ -7,6 +7,4 @@ memory = []
 friend = []
 
 
-
-# Start game at the reception
 current_room = rooms["flat"]

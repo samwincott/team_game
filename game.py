@@ -28,6 +28,8 @@ def call_hint():
     for x in hint:
         if x == level:
             print(hint[x])
+    if level > 12:
+        print(hint[12])
 
 def find_key(item_id, level):
     global current_room
@@ -43,7 +45,7 @@ def find_key(item_id, level):
             elif level <= 11 or item_id == "container":
                 print("The smell is vile and you quickly put the container away!!")
                 return
-        if item_id == "bedroom":
+        if item_id == "bedroom" and current_room == rooms["flat"]:
             for key in inventory:
                 if key["id"] == "key":
                     print("You have opended your Bedroom")
@@ -160,7 +162,7 @@ def print_menu(exits, room_items, inv_items, room_people):
             print_cook_bacon()
         if name["id"] == "flyer":
             print_read_flyer()
-        if name["id"] == "key":
+        if name["id"] == "key" and current_room == rooms["flat"]:
             print("OPEN BEDROOM to open your Bedroom")
     if current_room["name"] == "Arcade":
         print("PLAY GAME to play on arcade machine")

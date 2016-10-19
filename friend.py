@@ -233,7 +233,7 @@ friend_barista = {
 
     "name": "Barista",
 	
-    "phrase2": "That'll be £3.50",
+    "phrase2": "That'll be £3.50, here's your pumpkin spice latte",
 
     "memory": []
 }

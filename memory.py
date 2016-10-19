@@ -94,7 +94,8 @@ hint = {
 
     10 : "A pretty girl? That must be summer!",
 
-    12 : "I think I saw a kebab container back in the flat."
+    12 : "Check kebab container for keys, so I can finally go to bed."
+
 
 
 

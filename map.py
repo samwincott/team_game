@@ -13,9 +13,9 @@ room_flat = {
     "description":
     """Empty bottles litter the kitchen. Plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
 
-    "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf", "room": "bedroom"},
+    "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf"},
 
-    "items": [item_bacon, item_kebab_box, item_eggs, item_wallet],
+    "items": [item_bacon, item_kebab_box, item_can_of_coke, item_wallet],
 
     "friends": [friend_rick],
 
@@ -260,7 +260,7 @@ room_mcdonalds = {
 
     "name": "McDonalds",
 
-    "description": "An extreemly busy area, Deborah, the manager, is here and may have been last night. ",
+    "description": "An extremely busy area, Deborah, the manager, is here and may have been last night. ",
 
     "exits": {"north":"pryzm", "west": "nbuilding", "south": "walkabout"},
 

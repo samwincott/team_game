@@ -69,13 +69,13 @@ item_wallet = {
     "Your wallet with some money"
 }
 
-item_eggs = {
-    "id": "eggs",
+item_can_of_coke = {
+    "id": "coke",
 
-    "name": "eggs",
+    "name": "an empty can of coke",
 
     "description":
-    "Some eggs"
+    "An empty can of coke"
 }
 item_chocolate = {
     "id": "chocolate",

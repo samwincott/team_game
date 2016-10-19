@@ -46,9 +46,9 @@ def find_key(item_id, level):
                     current_room = room_bedroom
                     finish_game()
                     return
-        else:
-            print("You cannot open that!")
-            return    
+                else:
+                    print("You cannot open that!")
+                    return    
     print("You cannot open that!")
 
 
@@ -128,7 +128,6 @@ def print_exit(direction, leads_to):
 
 
 def print_menu(exits, room_items, inv_items, room_people):
-  
     print('\n')
     print("You can:")
     # Iterate over available exits
@@ -386,10 +385,39 @@ def main():
     width = 75
     game_ongoing = True
 
-    print('\n' * 50)
+    print("""
+             _____            _         
+            |  __ \          | |    
+            | |  | |_   _  __| | ___    
+            | |  | | | | |/ _` |/ _ \   
+            | |__| | |_| | (_| |  __/_   
+            |_____/ \__,_|\__,_|\___( )  
+                                    |/ """)
+    print("""
+                       _
+                      | |                 ( )   
+             __      _| |__   ___ _ __ ___|/ ___   
+             \ \ /\ / / '_ \ / _ \ '__/ _ \ / __| 
+              \ V  V /| | | |  __/ | |  __/ \__ \ 
+               \_/\_/ |_| |_|\___|_|  \___| |___/ 
+                                           """)
+    print("""
+                                _             ___  
+                               | |           |__ \ 
+              _ __ ___  _   _  | | _____ _   _  ) |
+             | '_ ` _ \| | | | | |/ / _ \ | | |/ / 
+             | | | | | | |_| | |   <  __/ |_| |_|  
+             |_| |_| |_|\__, | |_|\_\___|\__, (_)  
+                         __/ |            __/ |    
+                        |___/            |___/   """)  
+
+                                                                                 
+                                                                                    
+       
+    print('\n' * 1)
     print('+-' + '-' * width + '-+')
     print('\n')
-    print(textwrap.fill("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...", 79))
+    print(textwrap.fill("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep. You have no recollection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your room, but you can't seem to find your key. You must piece what happened last night to find your key...", 79))
     print('\n')
     
     

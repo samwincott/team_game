@@ -1,5 +1,3 @@
-
-
 from map import *
 from player import *
 from items import *
@@ -7,7 +5,7 @@ from gameparser import *
 from memory import *
 from friend import *
 from minigame import *
-
+import textwrap
 
 def player_level_check_friend(friend):
     if level >= friend["required_level"]:
@@ -352,10 +350,10 @@ def main():
     rick_awake = False
     width = 75
 
-    print('\n' * 3)
+    print('\n' * 50)
     print('+-' + '-' * width + '-+')
     print('\n')
-    print ("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...")
+    print(textwrap.fill("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...", 79))
     print('\n')
     
     

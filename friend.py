@@ -13,7 +13,7 @@ friend_rick = {
 
     "items": [],
 
-    "phrase1": "Rick is asleep, you cannot seem to wake him",
+    "phrase1": "Rick is asleep, you can't seem to wake him",
 
     "phrase2": """Mm mmm mmmm, is that bacon I smell? Absolutely the best thing to wake up to! As for your key, no idea mate. To be honest, I don't remember a whole lot from last night, I know we were here for a bit having some drinks, then you went out with Morty to the Taf I think. Sorry mate, that's all I know. """,
 
@@ -36,10 +36,10 @@ friend_morty = {
     "items": [],
 
     "phrase1":
-    """Oh, hey man! Good night last night mate, lost my bloody coat though. Can't say I remember anything about your key! But hey, I know after the Taf we went to walkabout for an hour or so before going to another club, but I can't for the life of me remember the name of the place""",
+    """Oh, hey man! Good night last night mate, lost my bloody coat though. Can't say I remember anything about your key! But hey, I know after the Taf we went to Walkabout for an hour or so before going to another club, but I can't for the life of me remember the name of the place.""",
 
     "phrase2":
-    """Heeeeey!! You have my jacket!! Whats this?... a flyer? That must be where we went after walkabout!!""",
+    """Heeeeey!! You have my jacket!! Whats this?... a flyer? That must be where we went after Walkabout!!""",
 
     "memory": [memory_12_1]
 }
@@ -56,7 +56,7 @@ friend_summer = {
     "items": [],
 
     "phrase1":
-    """Yeah, I remeber being out with you last night, but you know what, I'm gonna need some coffee before I can even start to think about last night properly, we both had a lot to drink.""",
+    """Yeah, I remember being out with you last night, but you know what, I'm gonna need some coffee before I can even start to think about last night properly, we both had a lot to drink.""",
 
     "phrase2":
     """For some strange reason you threw all the keys into a kebab box and started hiding it around the house, saying 'the kebab knight will protect our keys!' Guess they must still be in there """,
@@ -111,7 +111,7 @@ friend_club_rep_walkabout= {
     "items": [],
 
     "phrase2":
-    """Hey I remember you, well I remember you being kicked out anyway! """,
+    """Hey I remember you, well, I remember you being kicked out anyway! """,
 
     "memory": [] 
 

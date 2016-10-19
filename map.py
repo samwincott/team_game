@@ -57,7 +57,7 @@ room_taf = {
 
     "description": """A relaxed bar atmosphere, a few students (Lizzy and Sarah) are drinking casually as Gunther the bartender wipes the bar. """,
 
-    "exits":  {"east": "flat", "south":"wilko", "north": "talybont"},
+    "exits":  {"east": "flat", "south":"arcade", "north": "talybont"},
 
     "items": [item_jacket],
 
@@ -115,29 +115,13 @@ room_summers = {
     "description":
     """ An arty room (she's an illustartion student so..). There are paint brushes dottted about the place and pictures getting in the way""",
 
-    "exits": {"north": "flat","west":"wilko", "east": "starbucks"},
+    "exits": {"north": "flat","west":"arcade", "east": "starbucks"},
 
     "items": [],
 
     "friends": [friend_summer]
 }
 
-room_end = {
-
-    "required_level": 4,
-
-    "id": "end",
-
-    "name": "End",
-
-    "description":
-    """ Your room, in the same bomsite you left it in before drinking last night. Clothes on the floor, work on the bed and your laptop on the desk""",
-    "exits": {"east":"summers", "north": "end"},
-
-    "items": [item_kebab_box],
-
-    "friends": []
-}
 
 room_north_building = {
 
@@ -177,15 +161,15 @@ room_starbucks = {
 
 }
 
-room_wilko = {
+room_arcade = {
 
     "required_level": 4,
 
-    "id": "wilko",
+    "id": "arcade",
 
-    "name": "Wilko",
+    "name": "Arcade",
 
-    "description": "There isn't much of any interest here.",
+    "description": "There isn't much of any interest here, except a very old and dusty Nokia, hmm i wonder if it still works.",
 
     "exits": {"north":"taf", "east": "summers"},
 
@@ -311,10 +295,9 @@ rooms = {
     "pryzm": room_pryzm,
     "kebab": room_kebab,
     "summers": room_summers,
-    "end": room_end,
     "nbuilding": room_north_building,
     "starbucks": room_starbucks,
-    "wilko": room_wilko,
+    "arcade": room_arcade,
     "walkabout": room_walkabout,
     "tutor": room_personal_tutors_office,
     "wetherspoons": room_wetherspoons,

@@ -1,4 +1,4 @@
-def mini (guesstaken, youlose, number, Name):
+def mini():
     import random
 
     guesstaken = 1
@@ -58,5 +58,5 @@ def mini (guesstaken, youlose, number, Name):
         print("You " + Name + " have guessed correct within: " + guesstaken + " guesses!") 
      
 
-    return Minigame
+    return 
     

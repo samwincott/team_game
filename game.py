@@ -6,7 +6,7 @@ from items import *
 from gameparser import *
 from memory import *
 from friend import *
-
+from minigame import *
 
 
 def player_level_check_friend(friend):
@@ -22,6 +22,7 @@ def find_key(item_id, level):
             if level >= 12 and item_id == "container":
                 print("You open the kebab container and you find a shiny object covered in sweet chilli sauce and garlic mayonnaise, you have THE KEY")
                 inventory.append(item_key)
+                inventory.remove(item_id)
                 return
             elif level <= 11 or item_id == "container":
                 print("The smell is vile and you quickly put the container away!!")
@@ -165,12 +166,8 @@ def print_room(room):
     print("\n" + room["name"].upper() + "\n")
     # Display room description
     print(room["description"] + "\n")
-
-    #
-    # COMPLETE ME!
-    #
-
     print_room_items(room)
+        
 
 def exit_leads_to(exits, direction):
     """This function takes a dictionary of exits and a direction (a particular
@@ -238,7 +235,8 @@ def print_menu(exits, room_items, inv_items, room_people):
     #
 
     global rick_awake
-
+    global current_room
+   
     for name in room_people:
         print("TALK TO " + str(name["name"]).upper() + " to talk to " + name["name"])
 
@@ -257,6 +255,10 @@ def print_menu(exits, room_items, inv_items, room_people):
             print_read_flyer()
         if name["id"] == "key":
             print("OPEN BEDROOM to open your Bedroom")
+    if current_room["name"] == "Arcade":
+        print("PLAY GAME to play on arcade machine")
+        
+        #print("PLAY ARACDE to play on the arcade machine")
     have_item(inventory)
     
 
@@ -423,7 +425,11 @@ def read_flyer(item_id, inventory):
 
     print("you cannot read that.")
 
-
+def play_on_phone(command):
+    print("hey")
+    if command == "game":
+        mini()
+    
 def execute_command(command):
     """This function takes a command (a list of words as returned by
     normalise_input) and, depending on the type of action (the first word of
@@ -470,7 +476,12 @@ def execute_command(command):
         if len(command) > 1:
             find_key(command[1], level)
         else:
-            print("that won't help")       
+            print("that won't help")
+    elif command[0] == "play":
+        if len(command) > 1:
+            play_on_phone(command[1])
+        else:
+            print("that won't help")         
     else:
         print("This makes no sense.")
 
@@ -521,10 +532,12 @@ def main():
     print('\n')
     print ("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep, with no recolection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your rooom, but you can't seem to find your key. You must piece what happened last night to find your key...")
     print('\n')
+    
+    
     # Main game loop
     while True:
 
-
+        
         print('+-' + '-' * width + '-+')
         # Display game status (room description, inventory etc.)
         print_room(current_room)
@@ -541,7 +554,7 @@ def main():
         # Execute the player's command
 
         execute_command(command)
-
+        
 
 
 

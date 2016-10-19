@@ -93,7 +93,7 @@ room_kebab = {
     "lockout_phrase": "It seems the kebab shop is not open yet.",
 
     "description":
-    """A greasy kebab shop, a couple of workers are there (Kirt and Elerado) and there are some flyers on the table""",
+    """A greasy kebab shop, a couple of workers are there (Abdul and Greg ) and there are some flyers on the table""",
 
     "exits": {"east": "nbuilding", "west": "talybont", "south": "flat"},
 
@@ -187,7 +187,7 @@ room_walkabout = {
 
     "name": "Walkabout",
 
-    "description": "A stange site in the day, the club rep (Bob) stands there and greets you on your way in and is stopping you from looking around",
+    "description": "A stange site in the day, the club rep (James) stands there and greets you on your way in and is stopping you from looking around",
 
     "exits": {"west":"mortys", "north": "mcdonalds", "south": "wetherspoons"},
 

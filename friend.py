@@ -59,7 +59,7 @@ friend_summer = {
     """Yeah, I remeber being out with you last night, but you know what, Imma need some coffee to remeber last night properly, I had a lot too""",
 
     "phrase2":
-    """For some strange reason you threw most people’s keys into a kebab box and starting hiding it around the house, saying the kebab knight will protect our keys! Which… by the way was not fun when you put it in the bin… which is where I last left it """,
+    """For some strange reason you threw all the keys into a kebab box and starting hiding it around the house, saying the kebab knight will protect our keys! Guess they must still be in there """,
 
     "memory": [memory_4_5]
 

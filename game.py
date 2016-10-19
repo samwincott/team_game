@@ -181,11 +181,22 @@ def talk_to(person, room):
     global level
     people_in_room = current_room["friends"]
     if person == "gunther":
-        inventory.append(item_jacket)
+        if inventory == []:
+            inventory.append(item_jacket)
+            
+        else:
+            for x in inventory:
+                if x["id"] == "jacket":
+                    print(textwrap.fill(player_level_check_friend(friend_bar_staff), 79))
+                    return
+                
+            inventory.append(item_jacket)
+
     elif person == "barista":
         inventory.append(item_coffee)
     for friend in people_in_room:
         if friend["id"] == person:
+
             print(textwrap.fill(player_level_check_friend(friend), 79))
     
             if friend["memory"] != "" and level >= friend["required_level"]:

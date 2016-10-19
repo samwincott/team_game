@@ -19,6 +19,21 @@ def player_level_check_friend(friend):
 def finish_game():
     global game_ongoing 
     game_ongoing = False
+    print(""" 
+         _______ _           
+        |__   __| |          
+           | |  | |__   ___  
+           | |  | '_ \ / _ \ 
+           | |  | | | |  __/ 
+           |_|  |_| |_|\___| """)
+    print("""  
+                ______           _     
+               |  ____|         | |    
+               | |__   _ __   __| |    
+               |  __| | '_ \ / _` |    
+               | |____| | | | (_| |  _ 
+               |______|_| |_|\__,_| (_)
+        """)
     print("Last night:")
     for mem in memory:
         print(mem["description"])

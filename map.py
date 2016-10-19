@@ -157,7 +157,7 @@ room_starbucks = {
 
     "items": [item_coffee],
 
-    "friends": [friend_starbucks_worker]
+    "friends": [friend_barista]
 
 }
 

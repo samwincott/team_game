@@ -78,3 +78,24 @@ memory_4_5 = {
     
 }
 
+hint = {
+    
+    1 : "Nothing wakes people up like the smell of cooking food.",
+
+    4 : "Rick mentioned both Morty and The Taf, maybe I should check those out.",
+
+    6 : "Theres a flyer in my pocket, maybe I should read it.",
+
+    7 : "The flyer talked about a club called PRYZM, maybe I should ask around there.",
+
+    8 : "The PRYZM rep said we went to get food, there's a Maccie's down the road.",
+
+    9 : "I wonder why that Mcdonald's lady mentioned kebabs.",
+
+    10 : "A pretty girl? That must be summer!",
+
+    12 : "I think I saw a kebab container back in the flat."
+
+
+
+}

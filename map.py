@@ -73,7 +73,7 @@ room_pryzm = {
     "name": "PRYZM",
 
     "description":
-    """A totally different setting in the day, but mambo number 5 is playing as the place is being cleaned. A few friends (Joe and Mike) as well as the club rep, Joseph, are here. """,
+    """A totally different setting in the day, but mambo number 5 is playing as the place is being cleaned. A few friends (Bill and Mike) as well as the club rep, Joseph, are here. """,
 
     "exits": {"south": "mcdonalds", "west": "tutor"},
 
@@ -155,7 +155,7 @@ room_starbucks = {
 
     "exits": {"north":"mortys", "west": "summers", "east": "wetherspoons"},
 
-    "items": [item_coffee],
+    "items": [],
 
     "friends": [friend_barista]
 

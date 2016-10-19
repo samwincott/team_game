@@ -23,7 +23,11 @@ def finish_game():
     for mem in memory:
         print(mem["description"])
     
-
+def call_hint():
+    global level
+    for x in hint:
+        if x == level:
+            print(hint[x])
 
 def find_key(item_id, level):
     global current_room
@@ -46,9 +50,7 @@ def find_key(item_id, level):
                     current_room = room_bedroom
                     finish_game()
                     return
-                else:
-                    print("You cannot open that!")
-                    return    
+                
     print("You cannot open that!")
 
 
@@ -165,6 +167,7 @@ def print_menu(exits, room_items, inv_items, room_people):
         print("PLAY GAME2 to play second arcade machine")
     have_item(inventory)
     print("MEMORY to show what you remember from last night")
+    print("HINT if you want some help")
     print("What do you want to do?")
     print('\n')
 
@@ -179,9 +182,11 @@ def talk_to(person, room):
     people_in_room = current_room["friends"]
     if person == "gunther":
         inventory.append(item_jacket)
+    elif person == "barista":
+        inventory.append(item_coffee)
     for friend in people_in_room:
         if friend["id"] == person:
-            print(player_level_check_friend(friend))
+            print(textwrap.fill(player_level_check_friend(friend), 79))
     
             if friend["memory"] != "" and level >= friend["required_level"]:
                 for mem in friend["memory"]:
@@ -260,15 +265,15 @@ def execute_drop(item_id):
 def execute_cook(item_id):
     global level
     for item in inventory:
-      if item["id"] == item_id:
-          print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")
+      if item["id"] == "bacon" and item_id == "bacon":
+          print("You have cooked the bacon, the smell wakes up Rick from his deep sleep!!")
           inventory.remove(item)
           level = level + 1
           
 
           return
 
-    print("you cannot cook that")
+    print("You cannot cook that")
 
 
 def have_item(item_id):
@@ -356,8 +361,12 @@ def execute_command(command):
             print("that won't help") 
     elif command[0] == "memory":
         print_memory_description(memory)
+    elif command[0] == "hint":
+        call_hint()
+
     else:
         print("This makes no sense.")
+
 
 
 def menu(exits, room_items, inv_items, room_people):
@@ -415,11 +424,11 @@ def main():
                                                                                  
                                                                                     
        
-    print('\n' * 1)
-    print('+-' + '-' * width + '-+')
-    print('\n')
-    print(textwrap.fill("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep. You have no recollection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your room, but you can't seem to find your key. You must piece what happened last night to find your key...", 79))
-    print('\n')
+    print()
+    print('+-' + '-' * width + '-+' + '\n')
+    
+    print(textwrap.fill("You wake up in your kitchen, next to your flat mate Rick, who is fast asleep. You have no recollection of what last night entailed. You've cleraly had an adventurous, alcohol driven night. You try to go into your room, but you can't seem to find your key. You must piece what happened last night to find your key...", 79) + '\n')
+    
     
     
     # Main game loop
@@ -429,11 +438,13 @@ def main():
         print('+-' + '-' * width + '-+')
         # Display game status (room description, inventory etc.)
         print_room(current_room)
+
+        print('+-' + '-' * width + '-+' + '\n')
         print_inventory_items(inventory)
         print_memory(memory)
 
-        print('\n')
-        print('+-' + '-' * width + '-+')
+        
+        print('\n' + '+-' + '-' * width + '-+')
         # Show the menu with possible actions and ask the player
         command = menu(current_room["exits"], current_room["items"], inventory, current_room["friends"])
         print('\n' * 100)

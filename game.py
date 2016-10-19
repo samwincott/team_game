@@ -87,7 +87,7 @@ def print_room(room):
     # Display room name
     print("\n" + room["name"].upper() + "\n")
     # Display room description
-    print(room["description"] + "\n")
+    print(textwrap.fill((room["description"] + "\n"), 79))
     print_room_items(room)
         
 

@@ -284,7 +284,7 @@ def execute_drop(item_id):
             current_room["items"].append(item)
             inventory.remove(item)
             print("You have dropped " + item["id"])
-        return
+            return
 
     print("You cannot drop that.")
 

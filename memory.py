@@ -82,6 +82,8 @@ hint = {
     
     1 : "Nothing wakes people up like the smell of cooking food.",
 
+    2 : "Maybe I should talk to Rick",
+
     4 : "Rick mentioned both Morty and The Taf, maybe I should check those out.",
 
     6 : "Theres a flyer in my pocket, maybe I should read it.",

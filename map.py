@@ -11,7 +11,7 @@ room_flat = {
     "lockout_phrase": "",
 
     "description":
-    """Empty bottles litter the kitchen. plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
+    """Empty bottles litter the kitchen. Plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
 
     "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf"},
 
@@ -36,7 +36,7 @@ room_mortys = {
     "lockout_phrase": "I'd better not leave the flat until Rick's awake, I don't have my keys.",
 
     "description":
-    """A clean and tidy flat. In his room is his high end gaming computer hooked to a large monitor which dominates the room (There's a reason you're friends with him)""",
+    """A clean and tidy flat. In his room is his high end gaming computer hooked up to a large monitor which dominates the room (There's a reason you're friends with him). """,
 
     "exits":  {"north": "nbuilding", "west":"flat", "south": "starbucks", "east": "walkabout"},
 
@@ -73,7 +73,7 @@ room_pryzm = {
     "name": "PRYZM",
 
     "description":
-    """A totally different setting in the day, but mambo number 5 is playing as the place is being cleaned. A few frinds ( Joe and Mike) as well as the club rep Joseph""",
+    """A totally different setting in the day, but mambo number 5 is playing as the place is being cleaned. A few friends (Joe and Mike) as well as the club rep, Joseph, are here. """,
 
     "exits": {"south": "mcdonalds", "west": "tutor"},
 
@@ -93,7 +93,7 @@ room_kebab = {
     "lockout_phrase": "It seems the kebab shop is not open yet.",
 
     "description":
-    """A greasy kebab shop, a couple of workers are there (Abdul and Greg ) and there are some flyers on the table""",
+    """A greasy kebab shop, a couple of workers are there (Abdul and Greg) and there are some flyers on the table. """,
 
     "exits": {"east": "nbuilding", "west": "talybont", "south": "flat"},
 
@@ -113,7 +113,7 @@ room_summers = {
     "lockout_phrase": "You knock at the door... but no one answers",
 
     "description":
-    """ An arty room (she's an illustartion student so..). There are paint brushes dottted about the place and pictures getting in the way""",
+    """ An arty room (she's an illustration student so..). There are paint brushes dottted about the place and pictures getting in the way. """,
 
     "exits": {"north": "flat","west":"arcade", "east": "starbucks"},
 
@@ -151,7 +151,7 @@ room_starbucks = {
 
     "name": "Starbucks",
 
-    "description": "A busy starbucks, no one looks like they want to talk, best grab a coffee and get out the way.",
+    "description": "A busy Starbucks, no one looks like they want to talk, best grab a coffee and get out of the way.",
 
     "exits": {"north":"mortys", "west": "summers", "east": "wetherspoons"},
 
@@ -169,7 +169,7 @@ room_arcade = {
 
     "name": "Arcade",
 
-    "description": "There isn't much of any interest here, except a very old and dusty Nokia, hmm i wonder if it still works.",
+    "description": "There isn't much of any interest here, except a very old and dusty Nokia. Hmmm, I wonder if it still works..",
 
     "exits": {"north":"taf", "east": "summers"},
 
@@ -187,7 +187,7 @@ room_walkabout = {
 
     "name": "Walkabout",
 
-    "description": "A stange site in the day, the club rep (James) stands there and greets you on your way in and is stopping you from looking around",
+    "description": "A strange sight in the day, the club rep, James, stands there and greets you on your way in and is stopping you from looking around. ",
 
     "exits": {"west":"mortys", "north": "mcdonalds", "south": "wetherspoons"},
 
@@ -223,7 +223,7 @@ room_wetherspoons = {
 
     "name": "Wetherspoons",
 
-    "description": "Populated by people having lunch and the occasional alcoholic, no body you know is here. However there are some very nice looking glasses there that would be great for the flat...",
+    "description": "Populated by people having lunch, and the occasional alcoholic, nobody you know is here. However there are some very nice looking glasses there that would be great for the flat...",
 
     "exits": {"north":"walkabout", "west": "starbucks"},
 
@@ -260,7 +260,7 @@ room_mcdonalds = {
 
     "name": "McDonalds",
 
-    "description": "An extreemly busy area, Deborah, the manager, is here and may have been last night",
+    "description": "An extreemly busy area, Deborah, the manager, is here and may have been last night. ",
 
     "exits": {"north":"pryzm", "west": "nbuilding", "south": "walkabout"},
 
@@ -277,7 +277,7 @@ room_bedroom = {
 
     "name": "Bedroom",
 
-    "description": "A messy but cosy room",
+    "description": "A messy but cosy room. ",
 
     "exits": [],
 

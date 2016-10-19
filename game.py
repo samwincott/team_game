@@ -426,7 +426,6 @@ def read_flyer(item_id, inventory):
     print("you cannot read that.")
 
 def play_on_phone(command):
-    print("hey")
     if command == "game":
         mini()
     

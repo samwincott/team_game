@@ -15,7 +15,7 @@ friend_rick = {
 
     "phrase1": "Rick is asleep, you cannot seem to wake him",
 
-    "phrase2": """Mm mmm mmmm, is that bacon I smell? Absoulutely the best thing to wake up to. As for your key, no idea mate. To be honest, I dont remember a whole lot from last night, I know we were here for a bit having some drinks, then you went out with Morty to the Taf I think. Sorry mate, that's all I know. """,
+    "phrase2": """Mm mmm mmmm, is that bacon I smell? Absolutely the best thing to wake up to! As for your key, no idea mate. To be honest, I don't remember a whole lot from last night, I know we were here for a bit having some drinks, then you went out with Morty to the Taf I think. Sorry mate, that's all I know. """,
 
     "memory": [memory_10_11, memory_11_12]
 
@@ -36,10 +36,10 @@ friend_morty = {
     "items": [],
 
     "phrase1":
-    """Oh hey man! Good night last night mate, bloody lost my coat though. Can't say I remember anythign about your key, but hey after the Taff I know we went to walkabout for an hour or so before going to another club, but I can't for the life of me remember the name of the place""",
+    """Oh, hey man! Good night last night mate, lost my bloody coat though. Can't say I remember anything about your key! But hey, I know after the Taf we went to walkabout for an hour or so before going to another club, but I can't for the life of me remember the name of the place""",
 
     "phrase2":
-    """Heeeeey!! You have my jacket!! Hey a flyer, that must be where we went after walkabout!""",
+    """Heeeeey!! You have my jacket!! Whats this?... a flyer? That must be where we went after walkabout!!""",
 
     "memory": [memory_12_1]
 }
@@ -56,10 +56,10 @@ friend_summer = {
     "items": [],
 
     "phrase1":
-    """Yeah, I remeber being out with you last night, but you know what, Imma need some coffee to remeber last night properly, I had a lot too""",
+    """Yeah, I remeber being out with you last night, but you know what, I'm gonna need some coffee before I can even start to think about last night properly, we both had a lot to drink.""",
 
     "phrase2":
-    """For some strange reason you threw all the keys into a kebab box and starting hiding it around the house, saying the kebab knight will protect our keys! Guess they must still be in there """,
+    """For some strange reason you threw all the keys into a kebab box and started hiding it around the house, saying 'the kebab knight will protect our keys!' Guess they must still be in there """,
 
     "memory": [memory_4_5]
 
@@ -75,7 +75,7 @@ friend_bar_staff = {
     "name": "Gunther",
 
     "phrase2":
-    """OH! ITS YOU!? THE LEGEND WHO SMASHED 15 Jaegar Bombs in 5 mins! That was pretty impressive, hard to believe you were still partying after all that! Not sure know what you did after that, but your friend left his coat here, if you could get that back to him that would be great. """,
+    """OH! ITS YOU!! The legend who smashed 15 Jaegar Bombs in 5 mins!! That was pretty impressive, hard to believe you were still partying after all that! Not sure what you did after that, but your friend left his coat here, if you could get that back to him that would be great. Here...""",
 
     "memory" : []
 
@@ -94,7 +94,7 @@ friend_club_rep_pryzm = {
     "phrase1": "I'm a bit busy mate, come back later.",
 
     "phrase2":
-    """ You guys were here yeah, from about 1. I have no idea what happened to your key last night, we haven't had anything handed in, I'm guessing you went for some food, by how you lads were dancing, you would have worked up an apetite""",
+    """ You guys were here yeah, from about 1. I have no idea what happened to your key last night, we haven't had anything handed in, I'm guessing you went for some food... Judging by how you lads were dancing, you would have worked up an appetite""",
     "memory": [memory_1_2]
 
 
@@ -129,7 +129,7 @@ friend_kebab_worker_one = {
     "items": [],
 
     "phrase2":
-    """Hey, yeah you were here last night, you and a girl I think, pretty one she was.  """,
+    """Hey, yeah you were here last night! You and a girl I think, pretty one she was.  """,
 
     "memory": [memory_3_4]
 
@@ -165,7 +165,7 @@ friend_mcdonalds_worker = {
     
     "phrase1": """I'm not serving you right now, come back later when you dont reek of booze""",
 
-    "phrase2": """Right, YOU! GET OUT! After kicking off last night, I hope those kebabs were good, because thanks to you and your friends, you wont be served here in a long time!""",
+    "phrase2": """Right, YOU! GET OUT! I hope those kebabs were good, because after the uproar you and your friends caused yesterday, you wont be getting served here in a long time!""",
 
     "memory" : [memory_2_3]
     
@@ -179,7 +179,7 @@ friend_lizzy = {
 
     "name" : "Lizzy",
 
-    "phrase2": """Hey, good to see you, hope you're allright after last nigth, looked like you were partying hard, I had to get an early night myself""",
+    "phrase2": """Hey, good to see you, hope you're okay after last night, looked like you were partying hard, I had to get an early night myself""",
 
     "memory": []
     
@@ -193,7 +193,7 @@ friend_sarah= {
 
     "name" : "Sarah",
 
-    "phrase2": "Hi",
+    "phrase2": "Hiya, good to see you",
 
     "memory": []
 
@@ -220,18 +220,18 @@ friend_mike = {
 
     "name": "Mike",
 	
-    "phrase2": """Oh Hey there man""",
+    "phrase2": """Oh, hey there man, you look look rough!""",
 
     "memory": []
 }
 
-friend_starbucks_worker = {
+friend_barista = {
 	
     "required_level": 1,
 
-    "id": "starbucks worker",
+    "id": "barista",
 
-    "name": "Starbucks Worker",
+    "name": "Barista",
 	
     "phrase2": "That'll be £3.50",
 

@@ -199,13 +199,13 @@ friend_sarah= {
 
     }
 
-friend_joe = {
+friend_bill = {
     
     "required_level": 1,
 
-    "id": "joe",
+    "id": "bill",
 
-    "name" : "Joe",
+    "name" : "Bill",
     
     "phrase2": """Good to see you're still alive man! """,
 

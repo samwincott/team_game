@@ -59,7 +59,7 @@ room_taf = {
 
     "exits":  {"east": "flat", "south":"arcade", "north": "talybont"},
 
-    "items": [item_jacket],
+    "items": [],
 
     "friends": [friend_bar_staff, friend_lizzy, friend_sarah]
 }
@@ -79,7 +79,7 @@ room_pryzm = {
 
     "items": [],
 
-    "friends": [friend_club_rep_pryzm, friend_joe, friend_mike]
+    "friends": [friend_bill, friend_club_rep_pryzm, friend_mike]
 }
 
 room_kebab = {
@@ -99,7 +99,7 @@ room_kebab = {
 
     "items": [],
 
-    "friends": [friend_kebab_worker_one, friend_kebab_worker_two]
+    "friends": [friend_kebab_worker_two, friend_kebab_worker_one]
 }
 
 room_summers = {

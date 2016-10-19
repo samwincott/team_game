@@ -30,7 +30,9 @@ def find_key(item_id, level):
             if level >= 12 and item_id == "container":
                 print("You open the kebab container and you find a shiny object covered in sweet chilli sauce and garlic mayonnaise, you have THE KEY")
                 inventory.append(item_key)
-                inventory.remove(item_id)
+                for item in inventory:
+                    if item['id'] == item_id:
+                        inventory.remove(item)
                 return
             elif level <= 11 or item_id == "container":
                 print("The smell is vile and you quickly put the container away!!")

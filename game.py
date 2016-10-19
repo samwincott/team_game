@@ -534,7 +534,7 @@ def main():
         print('\n')
         print('+-' + '-' * width + '-+')
         # Show the menu with possible actions and ask the player
-        print("current room" + current_room["name"])
+        print("Current room: " + current_room["name"])
         command = menu(current_room["exits"], current_room["items"], inventory, current_room["friends"])
         print('\n' * 100)
         print('+-' + '-' * width + '-+')

@@ -13,6 +13,15 @@ def player_level_check_friend(friend):
     else:
         return friend["phrase1"]
 
+def finish_game():
+    global game_ongoing 
+    game_ongoing = False
+    print("Last night:")
+    for mem in memory:
+        print(mem["description"])
+    
+
+
 def find_key(item_id, level):
     global current_room
     for key in inventory:
@@ -30,6 +39,7 @@ def find_key(item_id, level):
                     if key["id"] == "key":
                         print("You have opended your Bedroom")
                         current_room = room_bedroom
+                        finish_game
                         return
             else:
                 print("You cannot open that!")
@@ -184,7 +194,8 @@ def execute_go(direction):
     global current_room
     global level
     exits = current_room["exits"]
-    next_room = move(exits, direction)
+    if is_valid_exit(exits, direction):
+        next_room = move(exits, direction)
 
     if is_valid_exit(exits, direction):
         if level < 4:
@@ -237,6 +248,7 @@ def execute_cook(item_id):
           print("you have cooked the bacon, the smell wakes up Rick from his deep sleep!!")
           inventory.remove(item)
           level = level + 1
+          
 
           return
 
@@ -347,8 +359,10 @@ def move(exits, direction):
 # This is the entry point of our program
 def main():
     global rick_awake
+    global game_ongoing
     rick_awake = False
     width = 75
+    game_ongoing = True
 
     print('\n' * 50)
     print('+-' + '-' * width + '-+')
@@ -358,7 +372,7 @@ def main():
     
     
     # Main game loop
-    while True:
+    while  game_ongoing == True:
 
         
         print('+-' + '-' * width + '-+')

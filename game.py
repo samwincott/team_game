@@ -8,6 +8,8 @@ from minigame import *
 import textwrap
 from minigame2 import *
 
+
+
 def player_level_check_friend(friend):
     if level >= friend["required_level"]:
         return friend["phrase2"]
@@ -37,16 +39,16 @@ def find_key(item_id, level):
             elif level <= 11 or item_id == "container":
                 print("The smell is vile and you quickly put the container away!!")
                 return
-            if item_id == "bedroom":
-                for key in inventory:
-                    if key["id"] == "key":
-                        print("You have opended your Bedroom")
-                        current_room = room_bedroom
-                        finish_game
-                        return
-            else:
-                print("You cannot open that!")
-                return    
+        if item_id == "bedroom":
+            for key in inventory:
+                if key["id"] == "key":
+                    print("You have opended your Bedroom")
+                    current_room = room_bedroom
+                    finish_game()
+                    return
+        else:
+            print("You cannot open that!")
+            return    
     print("You cannot open that!")
 
 
@@ -57,6 +59,16 @@ def list_of_items(items):
 
     items_list = items_list[:-2]
     return items_list
+
+
+def print_memory_description(current_memory):
+    
+    if len(current_memory) != 0:
+        print("What I know so far:")
+        for mem in current_memory:
+            print (mem["description"])
+    else:
+        print("You can't remember anything yet!")        
 
 def print_room_items(room):
     if str(list_of_items(room["items"])) != '':
@@ -154,6 +166,7 @@ def print_menu(exits, room_items, inv_items, room_people):
         print("PLAY GAME to play on arcade machine")
         print("PLAY GAME2 to play second arcade machine")
     have_item(inventory)
+    print("MEMORY to show what you remember from last night")
     print("What do you want to do?")
     print('\n')
 
@@ -340,7 +353,9 @@ def execute_command(command):
         if len(command) > 1:
             play_on_phone(command[1])
         else:
-            print("that won't help")         
+            print("that won't help") 
+    elif command[0] == "memory":
+        print_memory_description(memory)
     else:
         print("This makes no sense.")
 

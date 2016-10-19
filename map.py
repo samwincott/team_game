@@ -13,7 +13,7 @@ room_flat = {
     "description":
     """Empty bottles litter the kitchen. Plates with half eaten pizzas and kebabs. Tables have empty shot glasses scattered over them as well as half filled pint glasses. Your wallet is next to you, with only some coins left from your depleted funds. In the fridge there is bacon, eggs, milk and chocolate.  """,
 
-    "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf"},
+    "exits": {"south": "summers", "north": "kebab", "east": "mortys", "west": "taf", "room": "bedroom"},
 
     "items": [item_bacon, item_kebab_box, item_eggs, item_wallet],
 
@@ -276,6 +276,9 @@ room_bedroom = {
     "id": "bedroom",
 
     "name": "Bedroom",
+
+    "lockout_phrase": "It's locked, I need my key to get in",
+
 
     "description": "A messy but cosy room. ",
 

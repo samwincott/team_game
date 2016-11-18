@@ -17,7 +17,9 @@ def player_level_check_friend(friend):
         return friend["phrase1"]
 
 def finish_game():
-    global game_ongoing 
+    global game_ongoing
+    global width
+    width = 75 
     game_ongoing = False
     print(""" 
          _______ _           
@@ -34,10 +36,11 @@ def finish_game():
                | |____| | | | (_| |  _ 
                |______|_| |_|\__,_| (_)
         """)
+    print('+-' + '-' * width + '-+')
     print("Last night:")
     for mem in memory:
         print(mem["description"])
-    
+    print('+-' + '-' * width + '-+' + '\n')
 def call_hint():
     global level
     for x in hint:
